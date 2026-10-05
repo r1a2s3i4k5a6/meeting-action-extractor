@@ -2,16 +2,31 @@
 
 Run:  streamlit run app.py
 """
+import inspect
 from datetime import date
 from pathlib import Path
 
 import pandas as pd
 import streamlit as st
 
-from meeting_actions.evaluate import evaluate_dataset
+from meeting_actions.evaluate import BackendFallbackError, evaluate_dataset
 from meeting_actions.pipeline import run_pipeline
+from meeting_actions.schema import STATUSES
+from meeting_actions.ui_helpers import UNASSIGNED, filter_rows, items_to_rows, owners_in, summary_line
 
-SAMPLES = Path(__file__).parent / "data" / "sample_transcripts"
+ROOT = Path(__file__).parent
+SAMPLES = ROOT / "data" / "sample_transcripts"
+
+
+def _stretch(fn) -> dict:
+    """Full-width kwarg that works on old and new Streamlit (use_container_width was replaced by width='stretch')."""
+    try:
+        if "width" in inspect.signature(fn).parameters:
+            return {"width": "stretch"}
+    except (TypeError, ValueError):
+        pass
+    return {"use_container_width": True}
+
 
 st.set_page_config(page_title="Meeting Action-Item Extractor", page_icon="✅", layout="wide")
 st.title("✅ Meeting Action-Item Extractor")
@@ -42,45 +57,52 @@ with tab_run:
     text = st.text_area("Transcript", text, height=240, placeholder="Speaker: sentence ...")
 
     if st.button("Extract action items", type="primary", disabled=not text.strip()):
-        res = run_pipeline(text, meeting_date, backend=backend, min_confidence=min_conf, api_key=api_key,
-                           extra_participants=[a for a in attendees.split(",") if a.strip()])
+        try:
+            res = run_pipeline(text, meeting_date, backend=backend, min_confidence=min_conf, api_key=api_key,
+                               extra_participants=[a for a in attendees.split(",") if a.strip()])
+        except Exception as e:  # keep the UI alive on unexpected input
+            st.error(f"Could not process this transcript: {e}")
+            st.stop()
         for w in res.warnings:
             st.warning(w)
         st.write(f"**Backend:** {res.backend} · **Participants:** {', '.join(res.participants) or 'n/a'}")
         if res.items:
-            df = pd.DataFrame([i.to_dict() for i in res.items])
-            df["flags"] = df["flags"].apply(", ".join)
-            owners = sorted({o for o in df["owner"].dropna()})
-            pick = st.multiselect("Filter by owner", owners + ["(unassigned)"])
-            if pick:
-                mask = df["owner"].isin(pick) | (df["owner"].isna() & ("(unassigned)" in pick))
-                df = df[mask]
+            all_rows = items_to_rows(res.items)
+            pick = st.multiselect("Filter by owner", owners_in(all_rows) + [UNASSIGNED])
             only_review = st.checkbox("Show only items that need review")
-            if only_review:
-                df = df[df["status"] == "needs_review"]
-            st.caption("Edit any cell to correct the result, then download.")
+            rows = filter_rows(all_rows, pick, only_review)
+            st.caption("Edit any cell to correct the result (set status to 'done' when finished), then download.")
             edited = st.data_editor(
-                df[["task", "owner", "deadline", "status", "confidence", "flags", "source"]],
-                use_container_width=True, hide_index=True, num_rows="dynamic",
+                pd.DataFrame(rows), hide_index=True, num_rows="dynamic",
                 disabled=["flags", "source", "confidence"],
-                column_config={"status": st.column_config.SelectboxColumn(options=["open", "needs_review", "done"])},
+                column_config={"status": st.column_config.SelectboxColumn(options=list(STATUSES))},
+                **_stretch(st.data_editor),
             )
             d1, d2 = st.columns(2)
             d1.download_button("Download JSON", res.to_json(), "action_items.json", "application/json")
             d2.download_button("Download CSV (with your edits)", edited.to_csv(index=False), "action_items.csv", "text/csv")
-            n_review = sum(i.status == "needs_review" for i in res.items)
-            st.info(f"{len(res.items)} action items, {n_review} need review (missing owner, past deadline, low confidence...).")
+            st.info(summary_line(res.items))
         else:
             st.info("No action items found.")
         if res.issues:
             with st.expander(f"Validation log ({len(res.issues)})"):
-                st.dataframe(pd.DataFrame(res.issues), use_container_width=True, hide_index=True)
+                st.dataframe(pd.DataFrame(res.issues), hide_index=True, **_stretch(st.dataframe))
 
 with tab_eval:
-    st.write("Scores the extractor against gold annotations in `data/annotations.json`.")
+    st.write("Scores the extractor against the gold annotations in `data/*/annotations.json`.")
+    e1, e2 = st.columns(2)
+    eval_backend = e1.selectbox("Backend to evaluate", ["rules", "llm"], key="eval_backend",
+                                help="llm needs an API key (sidebar or ANTHROPIC_API_KEY) and costs API calls")
+    eval_limit = e2.number_input("Meetings per dataset (0 = all; use a small number for llm)", 0, 100,
+                                 0 if eval_backend == "rules" else 5, key="eval_limit")
     if st.button("Run evaluation"):
-        data_root = Path(__file__).parent / "data"
+        data_root = ROOT / "data"
         for d in [data_root] + sorted(p.parent for p in data_root.glob("*/annotations.json")):
-            rep = evaluate_dataset(d, backend="rules")
-            st.subheader(f"Dataset: {d.name}")
-            st.dataframe(pd.DataFrame(rep["by_threshold"]), use_container_width=True, hide_index=True)
+            try:
+                rep = evaluate_dataset(d, backend=eval_backend, limit=int(eval_limit),
+                                       **({"api_key": api_key} if eval_backend == "llm" else {}))
+            except BackendFallbackError as e:
+                st.error(f"The {eval_backend} backend did not run, so no scores were produced: {e}")
+                break
+            st.subheader(f"Dataset: {d.name} ({rep['n_meetings']} meetings, {rep['n_gold_items']} gold items)")
+            st.dataframe(pd.DataFrame(rep["by_threshold"]), hide_index=True, **_stretch(st.dataframe))
