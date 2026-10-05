@@ -14,7 +14,7 @@ from .rules_extractor import extract_rules
 from .schema import ActionItem
 from .validation import validate_items
 
-BACKENDS = ("rules", "llm", "auto")
+BACKENDS = ("rules", "llm", "auto", "transformer")
 CSV_FIELDS = ["task", "owner", "deadline", "status", "confidence", "flags", "source"]
 
 
@@ -81,6 +81,9 @@ def run_pipeline(text: str, reference_date: Optional[date] = None, backend: str 
             except LLMExtractionError as e:
                 warnings.append(f"LLM backend failed ({e}); fell back to rules.")
                 used = "rules"
+    if backend == "transformer":
+        from .transformer_backend import extract_transformer
+        raw_items = extract_transformer(segs, participants, ref)
     if used == "rules":
         raw_items = extract_rules(segs, participants, ref)
 

@@ -1,437 +1,59 @@
 {
-  "data": {
-    "backend": "rules",
-    "n_meetings": 5,
-    "n_gold_items": 27,
-    "by_threshold": [
-      {
-        "min_confidence": 0.0,
-        "tp": 27,
-        "fp": 1,
-        "fn": 0,
-        "precision": 0.964,
-        "recall": 1.0,
-        "f1": 0.982,
-        "owner_accuracy": 1.0,
-        "deadline_accuracy": 1.0,
-        "avg_confidence_tp": 0.863,
-        "avg_confidence_fp": 0.1
-      },
-      {
-        "min_confidence": 0.3,
-        "tp": 27,
-        "fp": 0,
-        "fn": 0,
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "owner_accuracy": 1.0,
-        "deadline_accuracy": 1.0,
-        "avg_confidence_tp": 0.863,
-        "avg_confidence_fp": null
-      },
-      {
-        "min_confidence": 0.5,
-        "tp": 25,
-        "fp": 0,
-        "fn": 2,
-        "precision": 1.0,
-        "recall": 0.926,
-        "f1": 0.962,
-        "owner_accuracy": 1.0,
-        "deadline_accuracy": 1.0,
-        "avg_confidence_tp": 0.904,
-        "avg_confidence_fp": null
-      },
-      {
-        "min_confidence": 0.7,
-        "tp": 25,
-        "fp": 0,
-        "fn": 2,
-        "precision": 1.0,
-        "recall": 0.926,
-        "f1": 0.962,
-        "owner_accuracy": 1.0,
-        "deadline_accuracy": 1.0,
-        "avg_confidence_tp": 0.904,
-        "avg_confidence_fp": null
-      }
-    ]
-  },
-  "blind": {
-    "backend": "rules",
-    "n_meetings": 2,
-    "n_gold_items": 13,
-    "by_threshold": [
-      {
-        "min_confidence": 0.0,
-        "tp": 13,
-        "fp": 0,
-        "fn": 0,
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "owner_accuracy": 1.0,
-        "deadline_accuracy": 1.0,
-        "avg_confidence_tp": 0.768,
-        "avg_confidence_fp": null
-      },
-      {
-        "min_confidence": 0.3,
-        "tp": 13,
-        "fp": 0,
-        "fn": 0,
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "owner_accuracy": 1.0,
-        "deadline_accuracy": 1.0,
-        "avg_confidence_tp": 0.768,
-        "avg_confidence_fp": null
-      },
-      {
-        "min_confidence": 0.5,
-        "tp": 11,
-        "fp": 0,
-        "fn": 2,
-        "precision": 1.0,
-        "recall": 0.846,
-        "f1": 0.917,
-        "owner_accuracy": 1.0,
-        "deadline_accuracy": 1.0,
-        "avg_confidence_tp": 0.845,
-        "avg_confidence_fp": null
-      },
-      {
-        "min_confidence": 0.7,
-        "tp": 9,
-        "fp": 0,
-        "fn": 4,
-        "precision": 1.0,
-        "recall": 0.692,
-        "f1": 0.818,
-        "owner_accuracy": 1.0,
-        "deadline_accuracy": 1.0,
-        "avg_confidence_tp": 0.91,
-        "avg_confidence_fp": null
-      }
-    ]
-  },
-  "heldout": {
-    "backend": "rules",
-    "n_meetings": 3,
-    "n_gold_items": 19,
-    "by_threshold": [
-      {
-        "min_confidence": 0.0,
-        "tp": 19,
-        "fp": 0,
-        "fn": 0,
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "owner_accuracy": 1.0,
-        "deadline_accuracy": 1.0,
-        "avg_confidence_tp": 0.835,
-        "avg_confidence_fp": null
-      },
-      {
-        "min_confidence": 0.3,
-        "tp": 19,
-        "fp": 0,
-        "fn": 0,
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "owner_accuracy": 1.0,
-        "deadline_accuracy": 1.0,
-        "avg_confidence_tp": 0.835,
-        "avg_confidence_fp": null
-      },
-      {
-        "min_confidence": 0.5,
-        "tp": 17,
-        "fp": 0,
-        "fn": 2,
-        "precision": 1.0,
-        "recall": 0.895,
-        "f1": 0.944,
-        "owner_accuracy": 1.0,
-        "deadline_accuracy": 1.0,
-        "avg_confidence_tp": 0.892,
-        "avg_confidence_fp": null
-      },
-      {
-        "min_confidence": 0.7,
-        "tp": 17,
-        "fp": 0,
-        "fn": 2,
-        "precision": 1.0,
-        "recall": 0.895,
-        "f1": 0.944,
-        "owner_accuracy": 1.0,
-        "deadline_accuracy": 1.0,
-        "avg_confidence_tp": 0.892,
-        "avg_confidence_fp": null
-      }
-    ]
-  },
-  "synthetic": {
-    "breakdown": {
-      "by_template": {
-        "action_item": {
-          "found": 9,
-          "fully_correct": 8,
-          "total": 9
-        },
-        "agreed_to": {
-          "found": 1,
-          "fully_correct": 1,
-          "total": 7
-        },
-        "can_i_get": {
-          "found": 1,
-          "fully_correct": 1,
-          "total": 9
-        },
-        "can_you": {
-          "found": 6,
-          "fully_correct": 6,
-          "total": 6
-        },
-        "going_to": {
-          "found": 13,
-          "fully_correct": 13,
-          "total": 13
-        },
-        "happy_to": {
-          "found": 16,
-          "fully_correct": 16,
-          "total": 16
-        },
-        "i_will": {
-          "found": 8,
-          "fully_correct": 8,
-          "total": 8
-        },
-        "id_like": {
-          "found": 12,
-          "fully_correct": 12,
-          "total": 12
-        },
-        "ill": {
-          "found": 5,
-          "fully_correct": 5,
-          "total": 5
-        },
-        "is_going_to": {
-          "found": 3,
-          "fully_correct": 3,
-          "total": 3
-        },
-        "let_me": {
-          "found": 12,
-          "fully_correct": 11,
-          "total": 12
-        },
-        "lets_have": {
-          "found": 12,
-          "fully_correct": 12,
-          "total": 12
-        },
-        "need_to": {
-          "found": 10,
-          "fully_correct": 10,
-          "total": 10
-        },
-        "on_it": {
-          "found": 2,
-          "fully_correct": 2,
-          "total": 8
-        },
-        "on_me": {
-          "found": 2,
-          "fully_correct": 2,
-          "total": 10
-        },
-        "over_to_you": {
-          "found": 1,
-          "fully_correct": 1,
-          "total": 9
-        },
-        "please": {
-          "found": 9,
-          "fully_correct": 8,
-          "total": 9
-        },
-        "promise": {
-          "found": 6,
-          "fully_correct": 6,
-          "total": 16
-        },
-        "someone_should": {
-          "found": 9,
-          "fully_correct": 9,
-          "total": 9
-        },
-        "thats_yours": {
-          "found": 3,
-          "fully_correct": 3,
-          "total": 7
-        },
-        "we_need": {
-          "found": 13,
-          "fully_correct": 13,
-          "total": 13
-        },
-        "we_should": {
-          "found": 5,
-          "fully_correct": 5,
-          "total": 5
-        },
-        "will": {
-          "found": 6,
-          "fully_correct": 6,
-          "total": 6
-        },
-        "youll_need": {
-          "found": 6,
-          "fully_correct": 6,
-          "total": 6
-        }
-      },
-      "by_deadline_kind": {
-        "before_event": {
-          "found": 7,
-          "fully_correct": 7,
-          "total": 9
-        },
-        "end_of_sprint": {
-          "found": 7,
-          "fully_correct": 7,
-          "total": 8
-        },
-        "eod": {
-          "found": 10,
-          "fully_correct": 10,
-          "total": 11
-        },
-        "eom": {
-          "found": 8,
-          "fully_correct": 8,
-          "total": 8
-        },
-        "eow_next": {
-          "found": 2,
-          "fully_correct": 2,
-          "total": 4
-        },
-        "in_days": {
-          "found": 10,
-          "fully_correct": 10,
-          "total": 13
-        },
-        "month_day": {
-          "found": 11,
-          "fully_correct": 11,
-          "total": 15
-        },
-        "next_weekday": {
-          "found": 11,
-          "fully_correct": 11,
-          "total": 17
-        },
-        "next_weekday_noon": {
-          "found": 3,
-          "fully_correct": 3,
-          "total": 3
-        },
-        "none": {
-          "found": 56,
-          "fully_correct": 56,
-          "total": 67
-        },
-        "ordinal": {
-          "found": 3,
-          "fully_correct": 3,
-          "total": 4
-        },
-        "tomorrow": {
-          "found": 12,
-          "fully_correct": 12,
-          "total": 19
-        },
-        "weekday": {
-          "found": 27,
-          "fully_correct": 27,
-          "total": 37
-        },
-        "within_weeks": {
-          "found": 3,
-          "fully_correct": 0,
-          "total": 5
-        }
-      },
-      "false_positives_by_kind": {
-        "meeting_activity": 14
-      }
+  "backend": "transformer",
+  "n_meetings": 5,
+  "n_gold_items": 27,
+  "by_threshold": [
+    {
+      "min_confidence": 0.0,
+      "tp": 12,
+      "fp": 0,
+      "fn": 15,
+      "precision": 1.0,
+      "recall": 0.444,
+      "f1": 0.615,
+      "owner_accuracy": 1.0,
+      "deadline_accuracy": 1.0,
+      "avg_confidence_tp": 0.643,
+      "avg_confidence_fp": null
     },
-    "backend": "rules",
-    "n_meetings": 40,
-    "n_gold_items": 220,
-    "by_threshold": [
-      {
-        "min_confidence": 0.0,
-        "tp": 170,
-        "fp": 14,
-        "fn": 50,
-        "precision": 0.924,
-        "recall": 0.773,
-        "f1": 0.842,
-        "owner_accuracy": 1.0,
-        "deadline_accuracy": 0.982,
-        "avg_confidence_tp": 0.815,
-        "avg_confidence_fp": 0.811
-      },
-      {
-        "min_confidence": 0.3,
-        "tp": 170,
-        "fp": 14,
-        "fn": 50,
-        "precision": 0.924,
-        "recall": 0.773,
-        "f1": 0.842,
-        "owner_accuracy": 1.0,
-        "deadline_accuracy": 0.982,
-        "avg_confidence_tp": 0.815,
-        "avg_confidence_fp": 0.811
-      },
-      {
-        "min_confidence": 0.5,
-        "tp": 143,
-        "fp": 14,
-        "fn": 77,
-        "precision": 0.911,
-        "recall": 0.65,
-        "f1": 0.759,
-        "owner_accuracy": 1.0,
-        "deadline_accuracy": 0.979,
-        "avg_confidence_tp": 0.899,
-        "avg_confidence_fp": 0.811
-      },
-      {
-        "min_confidence": 0.7,
-        "tp": 143,
-        "fp": 14,
-        "fn": 77,
-        "precision": 0.911,
-        "recall": 0.65,
-        "f1": 0.759,
-        "owner_accuracy": 1.0,
-        "deadline_accuracy": 0.979,
-        "avg_confidence_tp": 0.899,
-        "avg_confidence_fp": 0.811
-      }
-    ]
-  }
+    {
+      "min_confidence": 0.3,
+      "tp": 12,
+      "fp": 0,
+      "fn": 15,
+      "precision": 1.0,
+      "recall": 0.444,
+      "f1": 0.615,
+      "owner_accuracy": 1.0,
+      "deadline_accuracy": 1.0,
+      "avg_confidence_tp": 0.643,
+      "avg_confidence_fp": null
+    },
+    {
+      "min_confidence": 0.5,
+      "tp": 12,
+      "fp": 0,
+      "fn": 15,
+      "precision": 1.0,
+      "recall": 0.444,
+      "f1": 0.615,
+      "owner_accuracy": 1.0,
+      "deadline_accuracy": 1.0,
+      "avg_confidence_tp": 0.643,
+      "avg_confidence_fp": null
+    },
+    {
+      "min_confidence": 0.7,
+      "tp": 3,
+      "fp": 0,
+      "fn": 24,
+      "precision": 1.0,
+      "recall": 0.111,
+      "f1": 0.2,
+      "owner_accuracy": 1.0,
+      "deadline_accuracy": 1.0,
+      "avg_confidence_tp": 0.723,
+      "avg_confidence_fp": null
+    }
+  ]
 }

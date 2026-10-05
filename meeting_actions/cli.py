@@ -14,7 +14,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     ap = argparse.ArgumentParser(description="Extract action items from a meeting transcript.")
     ap.add_argument("transcript", help="Path to .txt / .vtt / .srt transcript ('-' for stdin)")
     ap.add_argument("--date", default=None, help="Meeting date YYYY-MM-DD (default: today)")
-    ap.add_argument("--backend", default="rules", choices=["rules", "llm", "auto"])
+    ap.add_argument("--backend", default="rules", choices=["rules", "llm", "auto", "transformer"])
     ap.add_argument("--format", default="table", choices=["table", "json", "csv"])
     ap.add_argument("--min-confidence", type=float, default=0.3)
     ap.add_argument("--attendees", default="", help="Comma-separated names of attendees who never speak")

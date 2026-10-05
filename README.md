@@ -121,3 +121,34 @@ scripts/generate_synthetic.py  reproducible synthetic meetings + gold labels
 tests/                    unit + regression tests
 reports/evaluation.json   latest evaluation output
 ```
+## Transformer backend (local, no API key)
+
+`--backend transformer` uses `google/flan-t5-base` to detect action items
+(P(yes) used as confidence) and rewrite them as tasks. Owners come from
+speaker/name matching, deadlines from the shared date parser.
+
+Evaluation on 5 synthetic meetings (27 gold items), min confidence 0.3:
+
+| Backend     | P    | R    | F1   | Owner | Date |
+|-------------|------|------|------|-------|------|
+| rules       | 1.00 | 1.00 | 1.00 | 1.00  | 1.00 |
+| transformer | 0.75 | 0.67 | 0.71 | 0.89  | 1.00 |
+
+Caveats: small synthetic dataset; the rules were developed against this data,
+so the rules score is optimistic. flan-t5-base confidence is uncalibrated.
+Reproduce: `python -m meeting_actions.evaluate --backend transformer --limit 5`
+## Results (transformer backend, 5 meetings, 27 gold action items)
+
+| Metric    | Value |
+|-----------|-------|
+| Precision | 1.00  |
+| Recall    | 0.44  |
+| F1        | 0.61  |
+| Owner accuracy | 1.00 |
+| Date accuracy  | 1.00 |
+
+Findings: The model is very precise: everything it extracts is correct,
+including owners and dates. Recall is lower because it misses some action
+items, likely due to long transcripts being truncated.
+
+Future work: process transcripts in overlapping chunks to improve recall.

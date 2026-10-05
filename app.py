@@ -34,7 +34,7 @@ st.caption("Upload a transcript and get structured action items: task, owner, de
 
 with st.sidebar:
     st.header("Settings")
-    backend = st.selectbox("Extraction backend", ["rules", "llm", "auto"],
+    backend = st.selectbox("Extraction backend", ["rules", "llm", "auto", "transformer"],
                            help="rules = offline; llm = Anthropic API; auto = llm if a key is set, else rules")
     api_key = st.text_input("Anthropic API key (llm/auto)", type="password") or None
     meeting_date = st.date_input("Meeting date", value=date.today(),
@@ -91,7 +91,7 @@ with tab_run:
 with tab_eval:
     st.write("Scores the extractor against the gold annotations in `data/*/annotations.json`.")
     e1, e2 = st.columns(2)
-    eval_backend = e1.selectbox("Backend to evaluate", ["rules", "llm"], key="eval_backend",
+    eval_backend = e1.selectbox("Backend to evaluate", ["rules", "llm", "transformer"], key="eval_backend",
                                 help="llm needs an API key (sidebar or ANTHROPIC_API_KEY) and costs API calls")
     eval_limit = e2.number_input("Meetings per dataset (0 = all; use a small number for llm)", 0, 100,
                                  0 if eval_backend == "rules" else 5, key="eval_limit")

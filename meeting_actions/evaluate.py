@@ -175,7 +175,7 @@ def main(argv: Optional[Sequence[str]] = None) -> None:
     ap = argparse.ArgumentParser(description="Evaluate extraction accuracy on annotated meetings.")
     ap.add_argument("--data-dir", default=str(DATA_DIR))
     ap.add_argument("--all", action="store_true", help="Evaluate every dataset under data/ (dev, heldout, blind)")
-    ap.add_argument("--backend", default="rules", choices=["rules", "llm"])
+    ap.add_argument("--backend", default="rules", choices=["rules", "llm", "transformer"])
     ap.add_argument("--limit", type=int, default=0, help="Only the first N meetings (saves LLM cost)")
     ap.add_argument("--compare", action="store_true",
                     help="Run rules AND llm on the same meetings and print them side by side "
