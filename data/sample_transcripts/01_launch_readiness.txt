@@ -1,0 +1,10 @@
+[00:00:05] Priya: Okay, let's get started. Today is the launch readiness check for the mobile app.
+[00:00:20] Marcus: Backend is mostly done. Um, the payment API still has two open bugs.
+[00:00:41] Priya: Marcus, can you fix the payment API bugs by Friday?
+[00:00:50] Marcus: Sure, I'll also write regression tests for the checkout flow before the release.
+[00:01:10] Elena: The design handoff is done, but the onboarding screens need new copy.
+[00:01:25] Priya: Elena will send the updated onboarding copy to Tom tomorrow.
+[00:01:40] Elena: Yes, I can do that. Also, I'll update the app store screenshots by September 25.
+[00:02:05] Tom: We should probably set up a rollback plan at some point.
+[00:02:30] Priya: Agreed. Tom, can you draft a rollback checklist and share it with the team by next Wednesday?
+[00:03:00] Priya: Last thing, I'll book the launch retro for the week after release. Thanks everyone.

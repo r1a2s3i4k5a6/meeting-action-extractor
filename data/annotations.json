@@ -1,0 +1,42 @@
+{
+  "description": "Gold action-item annotations for the sample transcripts. Add your own meetings here to evaluate on new data.",
+  "meetings": [
+    {"file": "01_launch_readiness.txt", "meeting_date": "2026-09-14", "action_items": [
+      {"task": "Fix the payment API bugs", "owner": "Marcus", "deadline": "2026-09-18"},
+      {"task": "Write regression tests for the checkout flow before the release", "owner": "Marcus", "deadline": null},
+      {"task": "Send the updated onboarding copy to Tom", "owner": "Elena", "deadline": "2026-09-15"},
+      {"task": "Update the app store screenshots", "owner": "Elena", "deadline": "2026-09-25"},
+      {"task": "Draft a rollback checklist and share it with the team", "owner": "Tom", "deadline": "2026-09-23"},
+      {"task": "Book the launch retro for the week after release", "owner": "Priya", "deadline": null}
+    ]},
+    {"file": "02_sales_sync.txt", "meeting_date": "2026-09-16", "action_items": [
+      {"task": "Send the signed contract to finance", "owner": "Jordan", "deadline": "2026-09-16"},
+      {"task": "Update the CRM with the new contact details", "owner": "Jordan", "deadline": null},
+      {"task": "Finish the pricing section", "owner": "Li", "deadline": "2026-09-18"},
+      {"task": "Review the legal terms once Li is done", "owner": "Dmitri", "deadline": null},
+      {"task": "Follow up with Globex", "owner": "Jordan", "deadline": "2026-09-23"},
+      {"task": "Circulate the meeting notes", "owner": "Aisha", "deadline": "2026-09-17"}
+    ]},
+    {"file": "03_product_planning.txt", "meeting_date": "2026-09-21", "action_items": [
+      {"task": "Share the final dashboard mockups with Raj", "owner": "Nina", "deadline": "2026-09-25"},
+      {"task": "Write the technical spec for the dashboard and send it to Omar", "owner": "Raj", "deadline": "2026-09-28"},
+      {"task": "Decide on the pricing tiers before the next meeting", "owner": null, "deadline": null},
+      {"task": "Loop in finance", "owner": "Omar", "deadline": "2026-09-24"},
+      {"task": "Schedule a customer interview with Acme", "owner": "Nina", "deadline": "2026-09-28"},
+      {"task": "Send the invite list to Sofia once it's confirmed", "owner": "Nina", "deadline": null}
+    ]},
+    {"file": "04_incident_review.vtt", "meeting_date": "2026-09-23", "action_items": [
+      {"task": "Add memory alerts to the cache cluster", "owner": "Carlos", "deadline": "2026-09-25"},
+      {"task": "Write a postmortem document and share it", "owner": "Carlos", "deadline": "2026-09-28"},
+      {"task": "Upgrade the Redis client library before the next deploy", "owner": "Wei", "deadline": null},
+      {"task": "Check the on-call rotation and update it", "owner": "Wei", "deadline": "2026-09-30"},
+      {"task": "Schedule a blameless review meeting with the whole team", "owner": "Carlos", "deadline": "2026-09-25"}
+    ]},
+    {"file": "05_marketing_weekly.txt", "meeting_date": "2026-09-28", "action_items": [
+      {"task": "Draft the October newsletter", "owner": "Ben", "deadline": "2026-10-01"},
+      {"task": "Prepare the social media calendar for November", "owner": "Yuki", "deadline": "2026-10-15"},
+      {"task": "Check the ad budget with finance", "owner": "Yuki", "deadline": "2026-09-29"},
+      {"task": "Fix the broken links in the landing page", "owner": null, "deadline": null}
+    ]}
+  ]
+}

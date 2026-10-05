@@ -1,0 +1,24 @@
+Wendy: Okay, let's get started.
+Maya: Did you write the test plan for the new API?
+Isla: I'm on it. Follow up with the Acme team by next Wednesday.
+Isla: I promise to share the meeting notes with the team by Thursday.
+Sofia: The team agreed the timeline looks fine.
+Sofia: Let me share my screen.
+Wendy: Who is able to prepare the quarterly metrics deck?
+Isla: Did you order the new laptops for the interns?
+Wendy: We need to arrange travel for the conference on October 5.
+Isla: Morning everyone.
+Sofia: Thanks, that's helpful.
+Wendy: Morning everyone.
+Isla: Good point.
+Sofia: The pricing sheet is blocked on legal.
+Isla: The team agreed the timeline looks fine.
+Wendy: Over to you, Sofia. Update the onboarding checklist tomorrow.
+Sofia: Sounds good.
+Sofia: Wendy is going to clean up the support backlog by the 11th.
+Isla: Great.
+Maya: The release notes is blocked on legal.
+Sofia: I can't review the pull request for the billing service before Monday.
+Wendy: To recap: Isla will follow up with the Acme team by next Wednesday.
+Sofia: To recap: Wendy will clean up the support backlog by the 11th.
+Wendy: Thanks everyone, that's it for today.

@@ -1,0 +1,24 @@
+Daniel: Okay, let's get started.
+Chloe: I won't be able to write the test plan for the new API this week.
+Chloe: I will share the meeting notes with the team by end of day.
+Chloe: I'd like Daniel to email the signed contract to legal by the 25th.
+Daniel: I already sent the release notes.
+Wendy: I can't refresh the sales forecast before Monday.
+Daniel: We closed twelve tickets last week.
+Wendy: I already sent the API documentation.
+Chloe: Morning everyone.
+Chloe: I'm going to update the onboarding checklist by next Thursday.
+Wendy: Morning everyone.
+Wendy: I won't be able to clean up the support backlog this week.
+Chloe: I won't be able to create tickets for the remaining bugs this week.
+Chloe: Morning everyone.
+Gavin: I'll walk you through the numbers.
+Chloe: Thanks for joining.
+Chloe: I can't review the pull request for the billing service before Monday.
+Chloe: It might be worth it to prepare the quarterly metrics deck sometime.
+Chloe: I need to document the deployment process by Friday.
+Chloe: Over to you, Gavin. Audit the access permissions for the shared drive before the board meeting.
+Gavin: Okay, no problem.
+Chloe: To recap: Daniel will email the signed contract to legal by the 25th.
+Daniel: To recap: Chloe will update the onboarding checklist by next Thursday.
+Daniel: Thanks everyone, that's it for today.

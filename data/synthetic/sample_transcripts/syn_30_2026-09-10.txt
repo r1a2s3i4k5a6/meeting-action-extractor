@@ -1,0 +1,29 @@
+[00:00] Daniel Garcia: Okay, let's get started.
+[00:11] Priya Patel: I'm going to arrange travel for the conference.
+[00:25] Daniel Garcia: Right, that makes sense.
+[00:34] Daniel Garcia: Yeah, I saw that.
+[00:41] Hana Moreau: Let me share my screen.
+[01:03] Hana Moreau: The team agreed the timeline looks fine.
+[01:19] Daniel Garcia: Can you hear me okay?
+[01:37] Priya Patel: I'm on it. Send the revised budget to finance by Monday.
+[01:44] Priya Patel: Great.
+[02:02] Daniel Garcia: I already sent the release notes.
+[02:10] Priya Patel: I promise to schedule a call with the vendor by next Monday.
+[02:22] Daniel Garcia: Priya, can you clean up the support backlog?
+[02:43] Priya Patel: On it.
+[03:08] Hana Moreau: We decided to go with the second option.
+[03:28] Priya Patel: Let's have Daniel share the meeting notes with the team on October 14.
+[03:35] Daniel Garcia: Okay, no problem.
+[03:44] Hana Moreau: The team agreed the timeline looks fine.
+[03:58] Hana Moreau: Let me pull up the dashboard.
+[04:14] Priya Patel: Should we send the revised budget to finance?
+[04:31] Hana Moreau: Did you write the test plan for the new API?
+[04:51] Daniel Garcia: I'm happy to set up the staging environment on September 27.
+[05:10] Hana Moreau: I finished the design mockups yesterday.
+[05:30] Hana Moreau: Let me explain how the process works.
+[05:47] Daniel Garcia: Yeah, I saw that.
+[05:55] Daniel Garcia: Action item: Priya to book a room for the offsite within two weeks.
+[06:18] Priya Patel: On it.
+[06:31] Hana Moreau: The quarterly report went live on Monday.
+[06:35] Daniel Garcia: To recap: Priya will send the revised budget to finance by Monday.
+[06:55] Daniel Garcia: Thanks everyone, that's it for today.

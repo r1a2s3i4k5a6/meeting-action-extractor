@@ -1,0 +1,7 @@
+Pia: Raul, what's the status on the dashboard bug?
+Raul: I'm still investigating. I should have a fix by Friday.
+Pia: Okay. Quinn, can you take over the customer call tomorrow? Raul will be heads down.
+Quinn: Sure, no problem. I'll send the agenda to the client tonight.
+Pia: One more thing: we need to schedule the quarterly review.
+Raul: I'll set it up for the week of November 2nd.
+Quinn: Let's make sure the slides are done before then.

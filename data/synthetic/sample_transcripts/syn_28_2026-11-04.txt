@@ -1,0 +1,25 @@
+[00:00] Felix: Okay, let's get started.
+[00:16] Elena: We need to order the new laptops for the interns.
+[00:30] Zoe: Let me clean up the support backlog.
+[00:52] Omar: Felix will book a room for the offsite.
+[00:59] Elena: Did you refresh the sales forecast?
+[01:08] Omar: I won't be able to review the pull request for the billing service this week.
+[01:21] Felix: I promise to renew the software licences by the end of the sprint.
+[01:43] Zoe: I updated the release notes last week.
+[01:59] Zoe: Who is able to refresh the sales forecast?
+[02:23] Felix: Thanks, that's helpful.
+[02:30] Omar: I finished the vendor comparison yesterday.
+[02:38] Mateo: Can I get Felix to collect feedback from the pilot users by Monday?
+[03:02] Felix: Sure.
+[03:22] Elena: Maybe we could run the load test on the checkout service at some point.
+[03:46] Mateo: I'm going to update the pricing page.
+[03:52] Zoe: Let me review the pull request for the billing service.
+[04:13] Zoe: I can't set up the staging environment before Monday.
+[04:25] Omar: Thanks, that's helpful.
+[04:44] Felix: Should we follow up with the Acme team?
+[04:55] Mateo: The quarterly report went live on Monday.
+[05:02] Omar: Yeah, I saw that.
+[05:08] Zoe: I can't clean up the support backlog before Monday.
+[05:23] Elena: To recap: Felix will renew the software licences by the end of the sprint.
+[05:42] Mateo: To recap: Felix will collect feedback from the pilot users by Monday.
+[05:52] Felix: Thanks everyone, that's it for today.

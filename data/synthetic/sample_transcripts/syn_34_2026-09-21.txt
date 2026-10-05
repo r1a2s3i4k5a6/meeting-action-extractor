@@ -1,0 +1,27 @@
+[00:00] Ethan Larsen: Okay, let's get started.
+[00:19] Mateo Larsen: Can I get Kenji to clean up the support backlog on October 15?
+[00:38] Noah Novak: I won't be able to migrate the old reports to the new dashboard this week.
+[00:47] Sofia Kim: I can't send the revised budget to finance before Monday.
+[01:03] Noah Novak: I can't follow up with the Acme team before Monday.
+[01:23] Mateo Larsen: Who is able to fix the login bug on the mobile app?
+[01:46] Kenji Silva: I'm happy to refresh the sales forecast by Tuesday.
+[02:01] Ethan Larsen: I already sent the design mockups.
+[02:14] Sofia Kim: Good point.
+[02:23] Noah Novak: Who is able to renew the software licences?
+[02:27] Sofia Kim: Ethan will update the pricing page on September 28.
+[02:35] Noah Novak: I updated the pricing sheet last week.
+[02:44] Sofia Kim: Okay.
+[02:53] Sofia Kim: Let me pull up the dashboard.
+[03:02] Noah Novak: Great.
+[03:24] Sofia Kim: Should we arrange travel for the conference?
+[03:44] Noah Novak: We closed twelve tickets last week.
+[03:55] Kenji Silva: Noah will fix the login bug on the mobile app.
+[04:08] Noah Novak: Ethan agreed to create tickets for the remaining bugs on October 12.
+[04:14] Ethan Larsen: Got it.
+[04:38] Ethan Larsen: Let's have Sofia send the revised budget to finance by the end of the sprint.
+[04:56] Kenji Silva: I already sent the vendor comparison.
+[05:00] Noah Novak: I already sent the API documentation.
+[05:21] Noah Novak: I'm on it. Review the pull request for the billing service by Friday.
+[05:31] Sofia Kim: Great.
+[05:49] Ethan Larsen: To recap: Sofia will send the revised budget to finance by the end of the sprint.
+[05:55] Ethan Larsen: Thanks everyone, that's it for today.

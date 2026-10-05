@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00:01.000 --> 00:00:05.000
+<v Hannah>Let's go over the incident from last night.
+
+00:00:05.500 --> 00:00:12.000
+<v Carlos>The cache cluster ran out of memory. I restarted the nodes at 2 AM.
+
+00:00:12.500 --> 00:00:20.000
+<v Hannah>Carlos, please add memory alerts to the cache cluster by the end of this week.
+
+00:00:20.500 --> 00:00:26.000
+<v Carlos>Okay. I'll also write a postmortem document and share it on Monday.
+
+00:00:26.500 --> 00:00:33.000
+<v Wei>I need to upgrade the Redis client library before the next deploy.
+
+00:00:33.500 --> 00:00:40.000
+<v Wei>Also, I will check the on-call rotation and update it by 2026-09-30.
+
+00:00:40.500 --> 00:00:48.000
+<v Hannah>Carlos, can you also schedule a blameless review meeting with the whole team on Friday?

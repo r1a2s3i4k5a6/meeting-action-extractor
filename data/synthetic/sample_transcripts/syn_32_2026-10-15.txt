@@ -1,0 +1,25 @@
+Daniel Reyes: Okay, let's get started.
+Felix Silva: I'm going to interview two candidates for the designer role by end of day.
+Maya Okafor: Thanks, that's helpful.
+Daniel Reyes: I'll walk you through the numbers.
+Daniel Reyes: I need to follow up with the Acme team tomorrow.
+Maya Okafor: Yeah, I saw that.
+Daniel Reyes: Over to you, Felix. Confirm the venue booking by Wednesday.
+Daniel Reyes: Should we interview two candidates for the designer role?
+Daniel Reyes: I finished the quarterly report yesterday.
+Daniel Reyes: The team agreed the timeline looks fine.
+Felix Silva: I finished the release notes yesterday.
+Maya Okafor: We decided to go with the second option.
+Maya Okafor: Right, that makes sense.
+Felix Silva: I'm happy to run the load test on the checkout service by Monday.
+Felix Silva: Someone should refresh the sales forecast.
+Maya Okafor: The API documentation went live on Monday.
+Maya Okafor: Let's have Daniel email the signed contract to legal.
+Daniel Reyes: Will do.
+Daniel Reyes: It might be worth it to audit the access permissions for the shared drive sometime.
+Daniel Reyes: I already sent the API documentation.
+Daniel Reyes: I promise to collect feedback from the pilot users by next Monday.
+Maya Okafor: We closed twelve tickets last week.
+Maya Okafor: I can't post the job description on the careers page before Monday.
+Daniel Reyes: To recap: Felix will confirm the venue booking by Wednesday.
+Daniel Reyes: Thanks everyone, that's it for today.

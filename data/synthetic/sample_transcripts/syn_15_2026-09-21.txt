@@ -1,0 +1,24 @@
+Omar Moreau: Okay, let's get started.
+Zoe Moreau: I updated the API documentation last week.
+Victor Patel: Gavin, please collect feedback from the pilot users within two weeks.
+Zoe Moreau: I updated the release notes last week.
+Victor Patel: I can't document the deployment process before Monday.
+Gavin Patel: I'll summarise the feedback quickly.
+Victor Patel: I promise to prepare the quarterly metrics deck by next Thursday.
+Zoe Moreau: Let's move on to the next item.
+Omar Moreau: I updated the pricing sheet last week.
+Victor Patel: Let me explain how the process works.
+Gavin Patel: Omar, you'll need to post the job description on the careers page.
+Omar Moreau: Got it.
+Victor Patel: Sounds good.
+Omar Moreau: I can't arrange travel for the conference before Monday.
+Victor Patel: Yeah, I saw that.
+Gavin Patel: I need to update the pricing page.
+Omar Moreau: I can't renew the software licences before Monday.
+Victor Patel: I'm happy to set up the staging environment.
+Omar Moreau: I finished the API documentation yesterday.
+Zoe Moreau: Okay.
+Omar Moreau: To recap: Gavin will update the pricing page.
+Gavin Patel: To recap: Omar will post the job description on the careers page.
+Victor Patel: To recap: Gavin will collect feedback from the pilot users within two weeks.
+Omar Moreau: Thanks everyone, that's it for today.

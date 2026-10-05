@@ -1,0 +1,26 @@
+[00:00] Arjun: Okay, let's get started.
+[00:15] Tessa: We could probably email the signed contract to legal if we have time.
+[00:23] Victor: Thanks, that's helpful.
+[00:28] Tessa: The team agreed the timeline looks fine.
+[00:53] Amara: I promise to run the load test on the checkout service by Tuesday.
+[01:18] Victor: We closed twelve tickets last week.
+[01:24] Amara: I'd like Tessa to confirm the venue booking on November 20.
+[01:32] Tessa: Okay, no problem.
+[01:36] Victor: I'm on it. Order the new laptops for the interns by the end of next week.
+[01:53] Victor: Agreed.
+[02:15] Arjun: We decided to go with the second option.
+[02:23] Arjun: Right, that makes sense.
+[02:48] Victor: Can I get Tessa to audit the access permissions for the shared drive by next Friday?
+[03:08] Victor: I'm happy to book a room for the offsite.
+[03:29] Arjun: I'm going to post the job description on the careers page.
+[03:35] Arjun: Thanks, that's helpful.
+[03:52] Victor: The team agreed the timeline looks fine.
+[04:12] Arjun: We decided to go with the second option.
+[04:37] Amara: I promise to schedule a call with the vendor.
+[04:46] Tessa: Thanks, that's helpful.
+[04:52] Victor: We could probably collect feedback from the pilot users if we have time.
+[05:12] Amara: Maybe we could run the load test on the checkout service at some point.
+[05:27] Tessa: We could probably write the test plan for the new API if we have time.
+[05:50] Amara: The team agreed the timeline looks fine.
+[06:09] Tessa: To recap: Amara will schedule a call with the vendor.
+[06:19] Arjun: Thanks everyone, that's it for today.

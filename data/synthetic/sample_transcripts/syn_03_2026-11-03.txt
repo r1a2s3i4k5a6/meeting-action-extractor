@@ -1,0 +1,21 @@
+[00:00] Noah: Okay, let's get started.
+[00:25] Mateo: I'm happy to renew the software licences by Monday.
+[00:41] Mateo: We decided to go with the second option.
+[01:04] Liam: Someone should email the signed contract to legal by the end of the month.
+[01:14] Mateo: I can't set up the staging environment before Monday.
+[01:27] Noah: Let me know if that works.
+[01:35] Liam: Did you refresh the sales forecast?
+[01:56] Noah: We decided to go with the second option.
+[02:16] Noah: Great.
+[02:28] Liam: I'll go first.
+[02:50] Noah: I'm happy to document the deployment process.
+[03:09] Noah: I will interview two candidates for the designer role in 3 days.
+[03:19] Liam: I won't be able to post the job description on the careers page this week.
+[03:36] Noah: The pricing sheet went live on Monday.
+[03:57] Liam: I can't share the meeting notes with the team before Monday.
+[04:04] Liam: Great.
+[04:24] Noah: Sounds good.
+[04:28] Liam: Who is able to confirm the venue booking?
+[04:51] Noah: Right, that makes sense.
+[05:07] Gavin: To recap: Mateo will renew the software licences by Monday.
+[05:11] Noah: Thanks everyone, that's it for today.

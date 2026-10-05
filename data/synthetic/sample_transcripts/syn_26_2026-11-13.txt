@@ -1,0 +1,23 @@
+[00:00] Liam: Okay, let's get started.
+[00:22] Maya: Liam agreed to run the load test on the checkout service by the end of the sprint.
+[00:28] Maya: I updated the quarterly report last week.
+[00:36] Olivia: I already sent the vendor comparison.
+[01:00] Liam: That's on me. Set up the staging environment.
+[01:05] Liam: Did you translate the help articles into Spanish?
+[01:22] Maya: Olivia, that one's yours: update the pricing page.
+[01:46] Olivia: Will do.
+[02:08] Liam: I will migrate the old reports to the new dashboard.
+[02:20] Olivia: I already sent the API documentation.
+[02:30] Maya: Thanks for joining.
+[02:44] Liam: We need to document the deployment process by the end of the sprint.
+[03:07] Maya: Sounds good.
+[03:23] Liam: Great.
+[03:33] Maya: Let me pull up the dashboard.
+[03:45] Maya: The team agreed the timeline looks fine.
+[04:03] Hana: Should we draft the customer announcement?
+[04:28] Liam: The design mockups went live on Monday.
+[04:32] Maya: Maybe we could arrange travel for the conference at some point.
+[04:44] Olivia: Let me draft the customer announcement on December 11.
+[04:53] Hana: Okay.
+[05:08] Hana: To recap: Liam will migrate the old reports to the new dashboard.
+[05:28] Liam: Thanks everyone, that's it for today.

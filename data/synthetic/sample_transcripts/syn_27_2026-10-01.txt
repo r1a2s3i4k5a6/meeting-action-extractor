@@ -1,0 +1,19 @@
+Ines: Okay, let's get started.
+Arjun: Mateo, that one's yours: migrate the old reports to the new dashboard by end of day.
+Omar: I'm going to send the revised budget to finance before the board meeting.
+Omar: Can you hear me okay?
+Isla: Maybe we could follow up with the Acme team at some point.
+Isla: Should we book a room for the offsite?
+Omar: Good point.
+Mateo: Morning everyone.
+Arjun: I can't collect feedback from the pilot users before Monday.
+Isla: I will book a room for the offsite by Wednesday.
+Arjun: Maybe we could draft the customer announcement at some point.
+Omar: Agreed.
+Omar: I'm happy to interview two candidates for the designer role by Wednesday.
+Omar: Good point.
+Ines: We decided to go with the second option.
+Isla: I finished the release notes yesterday.
+Mateo: I finished the pricing sheet yesterday.
+Mateo: To recap: Omar will interview two candidates for the designer role by Wednesday.
+Ines: Thanks everyone, that's it for today.

@@ -1,0 +1,24 @@
+[00:00] Omar: Okay, let's get started.
+[00:17] Omar: Morning everyone.
+[00:37] Isla: I can't set up the staging environment before Monday.
+[00:52] Elena: We decided to go with the second option.
+[01:09] Elena: I already sent the API documentation.
+[01:19] Olivia: Should we fix the login bug on the mobile app?
+[01:42] Elena: I won't be able to update the pricing page this week.
+[01:57] Olivia: Yeah, I saw that.
+[02:01] Omar: It might be worth it to create tickets for the remaining bugs sometime.
+[02:25] Isla: I'd like Kenji to review the pull request for the billing service before the launch.
+[02:30] Kenji: Got it.
+[02:40] Isla: Thanks for joining.
+[02:49] Olivia: Yeah, I saw that.
+[03:06] Olivia: The team agreed the timeline looks fine.
+[03:24] Elena: I'm happy to run the load test on the checkout service.
+[03:39] Isla: We should share the meeting notes with the team.
+[03:54] Elena: I'll clean up the support backlog.
+[04:10] Omar: Did you follow up with the Acme team?
+[04:20] Omar: Did you clean up the support backlog?
+[04:43] Isla: Over to you, Kenji. Create tickets for the remaining bugs by the end of next week.
+[04:52] Kenji: Sounds good.
+[04:59] Kenji: Thanks for joining.
+[05:19] Isla: To recap: Elena will clean up the support backlog.
+[05:23] Omar: Thanks everyone, that's it for today.

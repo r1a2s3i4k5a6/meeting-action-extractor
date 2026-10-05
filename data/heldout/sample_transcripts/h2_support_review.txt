@@ -1,0 +1,6 @@
+Fatima: Tickets are up 20 percent this week. George, I'd like you to look into the login errors by Thursday.
+George: Sure thing. I'll look at the logs tonight and post findings in the channel.
+Hiro: The refund policy doc is outdated. We have to rewrite it before the end of the month.
+Isabel: I'll take the refund policy rewrite, and I'll send Hiro a draft by the 23rd.
+Fatima: Hiro, can you ping the vendor about the invoice? Let me know what they say.
+Hiro: Will do.

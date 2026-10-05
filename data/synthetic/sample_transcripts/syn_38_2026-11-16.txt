@@ -1,0 +1,27 @@
+[00:00] Tessa: Okay, let's get started.
+[00:12] Ravi: Yeah, I saw that.
+[00:31] Tessa: It might be worth it to renew the software licences sometime.
+[00:40] Daniel: Thanks for joining.
+[00:49] Ravi: I will renew the software licences by Tuesday.
+[01:03] Noah: Thanks for joining.
+[01:08] Gavin: I promise to review the pull request for the billing service in 5 days.
+[01:32] Noah: I already sent the API documentation.
+[01:37] Tessa: Yeah, I saw that.
+[02:02] Ravi: It might be worth it to send the revised budget to finance sometime.
+[02:12] Gavin: I'd like Ravi to arrange travel for the conference by next Thursday.
+[02:24] Ravi: Sounds good.
+[02:49] Daniel: Agreed.
+[03:06] Daniel: Let me explain how the process works.
+[03:24] Daniel: Can you hear me okay?
+[03:32] Ravi: Let's have Noah benchmark the new search index by end of day.
+[03:39] Daniel: Maybe we could update the onboarding checklist at some point.
+[04:03] Gavin: I won't be able to audit the access permissions for the shared drive this week.
+[04:24] Gavin: I need to update the onboarding checklist tomorrow.
+[04:42] Daniel: Who is able to document the deployment process?
+[04:55] Gavin: We need to follow up with the Acme team before the launch.
+[05:01] Daniel: I updated the release notes last week.
+[05:14] Daniel: That's on me. Interview two candidates for the designer role by the end of the month.
+[05:20] Ravi: Should we confirm the venue booking?
+[05:45] Tessa: To recap: Daniel will interview two candidates for the designer role by the end of the month.
+[06:08] Noah: To recap: Gavin will review the pull request for the billing service in 5 days.
+[06:13] Tessa: Thanks everyone, that's it for today.

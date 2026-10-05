@@ -1,0 +1,30 @@
+{
+  "description": "Held-out set: phrasing deliberately different from the dev set. Written BEFORE the rules were extended to cover it.",
+  "meetings": [
+    {"file": "h1_q4_launch.txt", "meeting_date": "2026-10-05", "action_items": [
+      {"task": "Take care of the press release", "owner": "Beth", "deadline": null},
+      {"task": "Have a draft ready", "owner": "Beth", "deadline": "2026-10-07"},
+      {"task": "Get the legal sign-off", "owner": "Carlos", "deadline": "2026-10-15"},
+      {"task": "Reach out to legal", "owner": "Carlos", "deadline": "2026-10-05"},
+      {"task": "Update the landing page copy", "owner": "Dana", "deadline": "2026-10-09"},
+      {"task": "Send the media list to Dana", "owner": "Beth", "deadline": null},
+      {"task": "Set up a call with the vendor", "owner": "Carlos", "deadline": "2026-10-13"},
+      {"task": "Book a room for the offsite", "owner": null, "deadline": null}
+    ]},
+    {"file": "h2_support_review.txt", "meeting_date": "2026-10-12", "action_items": [
+      {"task": "Look into the login errors", "owner": "George", "deadline": "2026-10-15"},
+      {"task": "Look at the logs and post findings in the channel", "owner": "George", "deadline": "2026-10-12"},
+      {"task": "Rewrite the refund policy doc", "owner": null, "deadline": "2026-10-31"},
+      {"task": "Take the refund policy rewrite", "owner": "Isabel", "deadline": null},
+      {"task": "Send Hiro a draft", "owner": "Isabel", "deadline": "2026-10-23"},
+      {"task": "Ping the vendor about the invoice", "owner": "Hiro", "deadline": null}
+    ]},
+    {"file": "h3_standup.txt", "meeting_date": "2026-10-14", "action_items": [
+      {"task": "Add the auth section", "owner": "Kim", "deadline": null},
+      {"task": "Push the docs", "owner": "Kim", "deadline": "2026-10-14"},
+      {"task": "Ask DevOps to reset the environment", "owner": "Jun", "deadline": null},
+      {"task": "Review my pull request before lunch", "owner": "Kim", "deadline": null},
+      {"task": "Write up the release notes and send them to the team", "owner": "Lou", "deadline": "2026-10-16"}
+    ]}
+  ]
+}

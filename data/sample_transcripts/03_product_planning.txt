@@ -1,0 +1,10 @@
+Sofia: Let's review the roadmap for next quarter.
+Raj: The analytics dashboard is the top priority, but design isn't final.
+Sofia: Nina, can you share the final dashboard mockups with Raj by 9/25?
+Nina: Yep, will do.
+Raj: I'm going to write the technical spec for the dashboard and send it to Omar on September 28th.
+Omar: Sounds good. We need to decide on the pricing tiers before the next meeting.
+Sofia: Agreed. Omar, please loop in finance by Thursday.
+Raj: One more thing. Maybe we could look at a competitor teardown sometime.
+Nina: I'll schedule a customer interview with Acme
+for next week, and I'll send the invite list to Sofia once it's confirmed.

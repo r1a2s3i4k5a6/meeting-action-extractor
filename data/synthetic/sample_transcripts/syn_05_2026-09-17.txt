@@ -1,0 +1,21 @@
+Ines Moreau: Okay, let's get started.
+Kenji Okafor: We need to update the pricing page.
+Kenji Okafor: The API documentation went live on Monday.
+Omar Okafor: We could probably confirm the venue booking if we have time.
+Omar Okafor: I'm on it. Arrange travel for the conference.
+Ravi Silva: Can I get Kenji to draft the customer announcement tomorrow?
+Kenji Okafor: Got it.
+Ines Moreau: Sounds good.
+Nadia Nguyen: Let me pull up the dashboard.
+Nadia Nguyen: Agreed.
+Omar Okafor: The vendor comparison went live on Monday.
+Kenji Okafor: Agreed.
+Omar Okafor: Morning everyone.
+Ravi Silva: I'm happy to benchmark the new search index by Wednesday.
+Kenji Okafor: It might be worth it to arrange travel for the conference sometime.
+Nadia Nguyen: Who is able to audit the access permissions for the shared drive?
+Omar Okafor: Let's move on to the next item.
+Nadia Nguyen: Who is able to create tickets for the remaining bugs?
+Kenji Okafor: I can't book a room for the offsite before Monday.
+Ravi Silva: I'd like Ines to clean up the support backlog.
+Ines Moreau: Thanks everyone, that's it for today.

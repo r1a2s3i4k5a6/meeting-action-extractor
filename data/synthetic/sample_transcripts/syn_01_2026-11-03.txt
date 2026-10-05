@@ -1,0 +1,18 @@
+Ines Larsen: Okay, let's get started.
+Ines Larsen: The team agreed the timeline looks fine.
+Ines Larsen: I'm going to draft the customer announcement by next Thursday.
+Felix Moreau: Let me explain how the process works.
+Ines Larsen: The release notes went live on Monday.
+Kenji Garcia: The quarterly report went live on Monday.
+Felix Moreau: Thanks, that's helpful.
+Felix Moreau: Right, that makes sense.
+Yusuf Haddad: Maybe we could set up the staging environment at some point.
+Felix Moreau: I won't be able to email the signed contract to legal this week.
+Yusuf Haddad: Did you book a room for the offsite?
+Felix Moreau: Let me share the meeting notes with the team tomorrow.
+Lucas Tanaka: That's on me. Review the pull request for the billing service tomorrow.
+Yusuf Haddad: Great.
+Ines Larsen: I finished the vendor comparison yesterday.
+Ines Larsen: Yusuf is going to write the test plan for the new API in 2 days.
+Yusuf Haddad: Okay, no problem.
+Ines Larsen: Thanks everyone, that's it for today.

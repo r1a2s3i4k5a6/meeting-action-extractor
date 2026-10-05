@@ -1,0 +1,21 @@
+[00:00] Amara: Okay, let's get started.
+[00:10] Arjun: I already sent the vendor comparison.
+[00:26] Noah: Morning everyone.
+[00:39] Amara: I updated the release notes last week.
+[01:00] Noah: Let me arrange travel for the conference before the board meeting.
+[01:22] Noah: Should we arrange travel for the conference?
+[01:28] Arjun: Maybe we could renew the software licences at some point.
+[01:47] Noah: I can't confirm the venue booking before Monday.
+[01:51] Noah: I'll summarise the feedback quickly.
+[01:56] Amara: We decided to go with the second option.
+[02:15] Noah: Arjun, can you review the pull request for the billing service by next Monday?
+[02:20] Arjun: Will do.
+[02:36] Amara: Let me know if that works.
+[02:42] Arjun: Should we post the job description on the careers page?
+[02:59] Arjun: Noah will run the load test on the checkout service by the end of the sprint.
+[03:08] Arjun: Amara, you'll need to draft the customer announcement by the end of next week.
+[03:16] Amara: Thanks, that's helpful.
+[03:22] Amara: We could probably collect feedback from the pilot users if we have time.
+[03:32] Amara: Thanks for joining.
+[03:41] Arjun: To recap: Noah will arrange travel for the conference before the board meeting.
+[04:00] Amara: Thanks everyone, that's it for today.

@@ -1,0 +1,18 @@
+Chloe: Okay, let's get started.
+Elena: Let me document the deployment process in 5 days.
+Chloe: I can't share the meeting notes with the team before Monday.
+Chloe: I'll walk you through the numbers.
+Elena: It might be worth it to write the test plan for the new API sometime.
+Liam: Good point.
+Tessa: Let me explain how the process works.
+Liam: Good point.
+Chloe: Elena will post the job description on the careers page by Tuesday.
+Sofia: Should we clean up the support backlog?
+Chloe: I won't be able to renew the software licences this week.
+Liam: I can't refresh the sales forecast before Monday.
+Sofia: Morning everyone.
+Chloe: That's on me. Book a room for the offsite by the 7th.
+Elena: Sofia, please collect feedback from the pilot users by end of day.
+Liam: I updated the release notes last week.
+Liam: To recap: Elena will document the deployment process in 5 days.
+Chloe: Thanks everyone, that's it for today.

@@ -1,0 +1,23 @@
+[00:00] Chloe Moreau: Okay, let's get started.
+[00:18] Wendy Silva: Good point.
+[00:22] Wendy Silva: I won't be able to draft the customer announcement this week.
+[00:40] Amara Haddad: We could probably set up the staging environment if we have time.
+[00:55] Chloe Moreau: We closed twelve tickets last week.
+[01:13] Chloe Moreau: Let's move on to the next item.
+[01:33] Maya Kim: Maybe we could draft the customer announcement at some point.
+[01:58] Maya Kim: I already sent the vendor comparison.
+[02:12] Maya Kim: Let me pull up the dashboard.
+[02:34] Wendy Silva: I can't benchmark the new search index before Monday.
+[02:42] Maya Kim: I need to book a room for the offsite on November 23.
+[02:50] Amara Haddad: Wendy, that one's yours: create tickets for the remaining bugs by Thursday.
+[02:55] Maya Kim: Morning everyone.
+[03:15] Wendy Silva: Yeah, I saw that.
+[03:31] Wendy Silva: Over to you, Chloe. Review the pull request for the billing service tomorrow.
+[03:53] Wendy Silva: Right, that makes sense.
+[04:08] Maya Kim: Let's have Amara translate the help articles into Spanish.
+[04:13] Amara Haddad: I updated the pricing sheet last week.
+[04:34] Wendy Silva: Yeah, I saw that.
+[04:40] Maya Kim: The team agreed the timeline looks fine.
+[04:57] Chloe Moreau: I already sent the design mockups.
+[05:22] Wendy Silva: To recap: Maya will book a room for the offsite on November 23.
+[05:33] Chloe Moreau: Thanks everyone, that's it for today.

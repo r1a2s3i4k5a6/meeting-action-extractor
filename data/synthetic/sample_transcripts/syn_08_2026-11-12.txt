@@ -1,0 +1,27 @@
+Elena: Okay, let's get started.
+Priya: I'll go first.
+Priya: Can I get Tessa to share the meeting notes with the team in 3 days?
+Tessa: Got it.
+Elena: Let me collect feedback from the pilot users.
+Liam: We could probably clean up the support backlog if we have time.
+Liam: Who is able to set up the staging environment?
+Priya: Right, that makes sense.
+Liam: Did you audit the access permissions for the shared drive?
+Tessa: Action item: Liam to translate the help articles into Spanish.
+Elena: Okay.
+Elena: We could probably post the job description on the careers page if we have time.
+Elena: Let's have Tessa arrange travel for the conference by end of day.
+Liam: The pricing sheet is blocked on legal.
+Liam: I'll go first.
+Liam: We need to interview two candidates for the designer role by Wednesday.
+Elena: I can't write the test plan for the new API before Monday.
+Priya: The team agreed the timeline looks fine.
+Liam: Thanks for joining.
+Elena: I promise to create tickets for the remaining bugs.
+Priya: I'm going to prepare the quarterly metrics deck in 2 days.
+Elena: I can't benchmark the new search index before Monday.
+Elena: We closed twelve tickets last week.
+Liam: To recap: Elena will collect feedback from the pilot users.
+Tessa: To recap: Liam will translate the help articles into Spanish.
+Priya: To recap: Elena will create tickets for the remaining bugs.
+Elena: Thanks everyone, that's it for today.

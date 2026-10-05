@@ -1,0 +1,20 @@
+[00:00] Ethan Okafor: Okay, let's get started.
+[00:23] Ethan Okafor: I updated the design mockups last week.
+[00:46] Ines Nguyen: Let's move on to the next item.
+[00:53] Ines Nguyen: The API documentation went live on Monday.
+[01:10] Ethan Okafor: We decided to go with the second option.
+[01:14] Ines Nguyen: Agreed.
+[01:25] Ethan Okafor: I can't create tickets for the remaining bugs before Monday.
+[01:33] Ethan Okafor: Thanks for joining.
+[01:40] Kenji Silva: We should renew the software licences by the end of the month.
+[01:56] Mateo Moreau: We decided to go with the second option.
+[02:05] Kenji Silva: Ines agreed to book a room for the offsite by next Wednesday.
+[02:18] Ethan Okafor: Thanks, that's helpful.
+[02:38] Ethan Okafor: I can't translate the help articles into Spanish before Monday.
+[03:01] Ethan Okafor: We need to share the meeting notes with the team.
+[03:05] Ethan Okafor: I'll run the load test on the checkout service by the end of the sprint.
+[03:21] Ines Nguyen: Sounds good.
+[03:28] Kenji Silva: Great.
+[03:47] Ines Nguyen: I updated the quarterly report last week.
+[04:00] Kenji Silva: To recap: Ines will book a room for the offsite by next Wednesday.
+[04:21] Ethan Okafor: Thanks everyone, that's it for today.

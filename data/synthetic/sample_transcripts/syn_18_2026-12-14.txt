@@ -1,0 +1,28 @@
+Omar Okafor: Okay, let's get started.
+Omar Okafor: Did you order the new laptops for the interns?
+Omar Okafor: Okay.
+Omar Okafor: I need to migrate the old reports to the new dashboard.
+Zoe Larsen: I'll go first.
+Omar Okafor: We could probably update the onboarding checklist if we have time.
+Chloe Nguyen: Can I get Zoe to set up the staging environment tomorrow?
+Zoe Larsen: Will do.
+Chloe Nguyen: Maybe we could translate the help articles into Spanish at some point.
+Chloe Nguyen: I'm on it. Order the new laptops for the interns tomorrow.
+Zoe Larsen: I won't be able to update the pricing page this week.
+Omar Okafor: I need to run the load test on the checkout service by Thursday.
+Zoe Larsen: Let's have Omar draft the customer announcement.
+Omar Okafor: Got it.
+Zoe Larsen: I'd like Chloe to arrange travel for the conference by Friday.
+Chloe Nguyen: Sure.
+Chloe Nguyen: Who is able to document the deployment process?
+Omar Okafor: Did you draft the customer announcement?
+Zoe Larsen: We could probably send the revised budget to finance if we have time.
+Omar Okafor: Good point.
+Chloe Nguyen: I updated the design mockups last week.
+Omar Okafor: The team agreed the timeline looks fine.
+Zoe Larsen: Thanks for joining.
+Chloe Nguyen: Action item: Zoe to fix the login bug on the mobile app by the end of the month.
+Zoe Larsen: Okay, no problem.
+Zoe Larsen: Right, that makes sense.
+Zoe Larsen: To recap: Omar will run the load test on the checkout service by Thursday.
+Omar Okafor: Thanks everyone, that's it for today.

@@ -1,0 +1,7 @@
+Jun: Standup time. Kim, did you finish the API docs?
+Kim: Almost. I need to add the auth section, and I'll push the docs by 3 pm today.
+Lou: I'm blocked on the staging deploy. Jun, could you ask DevOps to reset the environment?
+Jun: Yes, will do.
+Lou: Kim, please review my pull request before lunch.
+Kim: Sure. Is it OK if I do that tomorrow morning?
+Lou: I'll write up the release notes and send them to the team on Friday at 10 am.

@@ -1,0 +1,20 @@
+[00:00] Amara Reyes: Okay, let's get started.
+[00:17] Sofia Larsen: Okay.
+[00:30] Sofia Larsen: Should we order the new laptops for the interns?
+[00:45] Sofia Larsen: Thanks, that's helpful.
+[01:10] Amara Reyes: The team agreed the timeline looks fine.
+[01:31] Sofia Larsen: Maybe we could interview two candidates for the designer role at some point.
+[01:50] Yusuf Kim: I'll go first.
+[02:01] Yusuf Kim: Someone should set up the staging environment.
+[02:25] Amara Reyes: Let me share my screen.
+[02:36] Sofia Larsen: We could probably prepare the quarterly metrics deck if we have time.
+[02:51] Yusuf Kim: I'll clean up the support backlog in 5 days.
+[03:05] Sofia Larsen: Who is able to follow up with the Acme team?
+[03:14] Yusuf Kim: Okay.
+[03:34] Yusuf Kim: It might be worth it to draft the customer announcement sometime.
+[03:42] Sofia Larsen: Did you prepare the quarterly metrics deck?
+[03:48] Amara Reyes: I already sent the API documentation.
+[03:54] Yusuf Kim: Can I get Sofia to post the job description on the careers page in 6 days?
+[04:01] Yusuf Kim: I promise to create tickets for the remaining bugs by Thursday.
+[04:14] Amara Reyes: To recap: Yusuf will clean up the support backlog in 5 days.
+[04:21] Amara Reyes: Thanks everyone, that's it for today.

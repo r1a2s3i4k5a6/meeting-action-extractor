@@ -1,0 +1,82 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.000
+<v Felix>Okay, let's get started.
+
+00:00:07.000 --> 00:00:10.000
+<v Olivia>Thanks for joining.
+
+00:00:11.000 --> 00:00:15.000
+<v Olivia>Yeah, I saw that.
+
+00:00:16.000 --> 00:00:19.000
+<v Olivia>Felix, you'll need to review the pull request for the billing service.
+
+00:00:20.000 --> 00:00:29.000
+<v Amara>We decided to go with the second option.
+
+00:00:30.000 --> 00:00:33.000
+<v Olivia>Let's move on to the next item.
+
+00:00:34.000 --> 00:00:41.000
+<v Felix>I'm happy to fix the login bug on the mobile app tomorrow.
+
+00:00:42.000 --> 00:00:45.000
+<v Felix>We need to schedule a call with the vendor.
+
+00:00:46.000 --> 00:00:55.000
+<v Olivia>I'll summarise the feedback quickly.
+
+00:00:56.000 --> 00:01:02.000
+<v Olivia>It might be worth it to audit the access permissions for the shared drive sometime.
+
+00:01:03.000 --> 00:01:10.000
+<v Amara>Should we arrange travel for the conference?
+
+00:01:11.000 --> 00:01:19.000
+<v Felix>Olivia, please benchmark the new search index.
+
+00:01:20.000 --> 00:01:24.000
+<v Olivia>On it.
+
+00:01:25.000 --> 00:01:34.000
+<v Felix>Someone should update the onboarding checklist by the end of the month.
+
+00:01:35.000 --> 00:01:40.000
+<v Olivia>Let me know if that works.
+
+00:01:41.000 --> 00:01:50.000
+<v Felix>I updated the vendor comparison last week.
+
+00:01:51.000 --> 00:01:58.000
+<v Amara>I'll go first.
+
+00:01:59.000 --> 00:02:06.000
+<v Olivia>Did you refresh the sales forecast?
+
+00:02:07.000 --> 00:02:15.000
+<v Amara>Good point.
+
+00:02:16.000 --> 00:02:23.000
+<v Felix>I'd like Amara to write the test plan for the new API on October 20.
+
+00:02:24.000 --> 00:02:32.000
+<v Olivia>I already sent the release notes.
+
+00:02:33.000 --> 00:02:40.000
+<v Felix>I updated the vendor comparison last week.
+
+00:02:41.000 --> 00:02:44.000
+<v Amara>Felix, that one's yours: collect feedback from the pilot users by Thursday.
+
+00:02:45.000 --> 00:02:48.000
+<v Felix>On it.
+
+00:02:49.000 --> 00:02:53.000
+<v Felix>To recap: Olivia will benchmark the new search index.
+
+00:02:54.000 --> 00:02:59.000
+<v Amara>To recap: Felix will collect feedback from the pilot users by Thursday.
+
+00:03:00.000 --> 00:03:06.000
+<v Felix>Thanks everyone, that's it for today.

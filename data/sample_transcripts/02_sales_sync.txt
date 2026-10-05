@@ -1,0 +1,11 @@
+[10:00:02] Aisha: Morning all. Quick sync on the Q4 pipeline.
+[10:00:15] Jordan: We closed the Northwind deal yesterday. Contract is signed.
+[10:00:30] Aisha: Great. Jordan, please send the signed contract to finance by end of day.
+[10:00:48] Jordan: Will do. I also need to update the CRM with the new contact details.
+[10:01:20] Li: The Acme proposal is due on the 30th of September. I haven't started the pricing section.
+[10:01:45] Aisha: Li, could you finish the pricing section by Friday? Dmitri, can you review the legal terms once Li is done?
+[10:02:10] Li: Yes, no problem.
+[10:02:15] Dmitri: Sure, sounds good.
+[10:02:40] Jordan: Should we send a follow-up to the Globex team? They went quiet.
+[10:03:00] Aisha: Yes. Jordan, follow up with Globex next week.
+[10:03:20] Aisha: I'll circulate the meeting notes by tomorrow.

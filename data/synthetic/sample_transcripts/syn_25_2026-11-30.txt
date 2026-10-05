@@ -1,0 +1,26 @@
+Victor: Okay, let's get started.
+Priya: Right, that makes sense.
+Victor: We decided to go with the second option.
+Felix: Right, that makes sense.
+Victor: I updated the vendor comparison last week.
+Priya: I'm going to refresh the sales forecast tomorrow.
+Priya: The team agreed the timeline looks fine.
+Felix: Priya, you'll need to confirm the venue booking tomorrow.
+Priya: Sure.
+Priya: Maybe we could translate the help articles into Spanish at some point.
+Zoe: I won't be able to migrate the old reports to the new dashboard this week.
+Priya: Agreed.
+Priya: I'd like Zoe to email the signed contract to legal.
+Felix: I won't be able to review the pull request for the billing service this week.
+Priya: I won't be able to prepare the quarterly metrics deck this week.
+Victor: Who is able to migrate the old reports to the new dashboard?
+Victor: Let me clean up the support backlog by next Tuesday at noon.
+Priya: I updated the design mockups last week.
+Felix: I won't be able to order the new laptops for the interns this week.
+Zoe: That's on me. Document the deployment process on January 3.
+Zoe: I updated the API documentation last week.
+Zoe: Morning everyone.
+Felix: We need to share the meeting notes with the team by Wednesday.
+Felix: Yeah, I saw that.
+Victor: I won't be able to share the meeting notes with the team this week.
+Victor: Thanks everyone, that's it for today.

@@ -1,0 +1,24 @@
+[00:00] Liam Moreau: Okay, let's get started.
+[00:13] Mateo Patel: I won't be able to draft the customer announcement this week.
+[00:33] Mateo Patel: It might be worth it to clean up the support backlog sometime.
+[00:57] Liam Moreau: Okay.
+[01:18] Mateo Patel: We need to arrange travel for the conference by Tuesday.
+[01:35] Noah Novak: I can't follow up with the Acme team before Monday.
+[01:45] Mateo Patel: Let me confirm the venue booking within two weeks.
+[02:02] Liam Moreau: I won't be able to post the job description on the careers page this week.
+[02:13] Liam Moreau: Let me explain how the process works.
+[02:32] Mateo Patel: It might be worth it to follow up with the Acme team sometime.
+[02:38] Liam Moreau: I updated the vendor comparison last week.
+[02:45] Mateo Patel: Someone should create tickets for the remaining bugs by the end of the sprint.
+[03:02] Noah Novak: Thanks, that's helpful.
+[03:19] Mateo Patel: I won't be able to refresh the sales forecast this week.
+[03:38] Mateo Patel: Let me know if that works.
+[04:03] Liam Moreau: Maybe we could arrange travel for the conference at some point.
+[04:20] Mateo Patel: Should we share the meeting notes with the team?
+[04:44] Elena Okafor: Thanks for joining.
+[05:05] Liam Moreau: Agreed.
+[05:29] Elena Okafor: Liam agreed to book a room for the offsite by next Wednesday.
+[05:49] Liam Moreau: Sounds good.
+[06:01] Mateo Patel: Someone should migrate the old reports to the new dashboard by Thursday.
+[06:23] Noah Novak: To recap: Mateo will confirm the venue booking within two weeks.
+[06:44] Liam Moreau: Thanks everyone, that's it for today.

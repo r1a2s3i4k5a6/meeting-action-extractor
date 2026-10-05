@@ -1,0 +1,23 @@
+[00:00] Kenji Moreau: Okay, let's get started.
+[00:05] Kenji Moreau: The quarterly report went live on Monday.
+[00:24] Mateo Okafor: I finished the release notes yesterday.
+[00:47] Mateo Okafor: Let me know if that works.
+[01:05] Kenji Moreau: Right, that makes sense.
+[01:13] Kenji Moreau: Mateo agreed to post the job description on the careers page.
+[01:22] Mateo Okafor: Sure.
+[01:38] Mateo Okafor: Kenji, please collect feedback from the pilot users.
+[01:51] Kenji Moreau: Sure.
+[02:15] Amara Tanaka: Can you hear me okay?
+[02:20] Kenji Moreau: Did you create tickets for the remaining bugs?
+[02:27] Mateo Okafor: Okay.
+[02:51] Mateo Okafor: I can't write the test plan for the new API before Monday.
+[03:08] Amara Tanaka: Did you draft the customer announcement?
+[03:19] Mateo Okafor: I need to follow up with the Acme team by next Friday at noon.
+[03:36] Amara Tanaka: Kenji, please email the signed contract to legal before the launch.
+[03:42] Kenji Moreau: On it.
+[04:06] Kenji Moreau: We decided to go with the second option.
+[04:24] Amara Tanaka: Thanks for joining.
+[04:33] Mateo Okafor: We decided to go with the second option.
+[04:56] Kenji Moreau: Yeah, I saw that.
+[05:05] Amara Tanaka: Kenji agreed to create tickets for the remaining bugs.
+[05:24] Kenji Moreau: Thanks everyone, that's it for today.

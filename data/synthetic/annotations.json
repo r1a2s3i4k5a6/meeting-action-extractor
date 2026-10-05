@@ -1,0 +1,3441 @@
+{
+ "description": "Synthetic meetings (seed 11) from scripts/generate_synthetic.py. Gold is exact by construction; includes phrasings the rules do not cover and hard negatives. Not a real-world estimate.",
+ "meetings": [
+  {
+   "file": "syn_01_2026-11-03.txt",
+   "meeting_date": "2026-11-03",
+   "action_items": [
+    {
+     "task": "Share the meeting notes with the team",
+     "owner": "Felix Moreau",
+     "deadline": "2026-11-04",
+     "template": "let_me",
+     "when": "tomorrow"
+    },
+    {
+     "task": "Write the test plan for the new API",
+     "owner": "Yusuf Haddad",
+     "deadline": "2026-11-05",
+     "template": "is_going_to",
+     "when": "in_days"
+    },
+    {
+     "task": "Draft the customer announcement",
+     "owner": "Ines Larsen",
+     "deadline": "2026-11-12",
+     "template": "going_to",
+     "when": "next_weekday"
+    },
+    {
+     "task": "Review the pull request for the billing service",
+     "owner": "Lucas Tanaka",
+     "deadline": "2026-11-04",
+     "template": "on_me",
+     "when": "tomorrow"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "question",
+     "text": "Did you book a room for the offsite?"
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "status",
+     "text": "I finished the vendor comparison yesterday."
+    },
+    {
+     "kind": "status",
+     "text": "The release notes went live on Monday."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me explain how the process works."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to email the signed contract to legal this week."
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could set up the staging environment at some point."
+    },
+    {
+     "kind": "status",
+     "text": "The quarterly report went live on Monday."
+    }
+   ]
+  },
+  {
+   "file": "syn_02_2026-11-02.vtt",
+   "meeting_date": "2026-11-02",
+   "action_items": [
+    {
+     "task": "Review the pull request for the billing service",
+     "owner": "Daniel",
+     "deadline": null,
+     "template": "thats_yours",
+     "when": "none"
+    },
+    {
+     "task": "Clean up the support backlog",
+     "owner": "Yusuf",
+     "deadline": "2026-11-04",
+     "template": "action_item",
+     "when": "weekday"
+    },
+    {
+     "task": "Arrange travel for the conference",
+     "owner": "Daniel",
+     "deadline": "2026-11-02",
+     "template": "i_will",
+     "when": "eod"
+    },
+    {
+     "task": "Fix the login bug on the mobile app",
+     "owner": "Nadia",
+     "deadline": null,
+     "template": "on_it",
+     "when": "none"
+    },
+    {
+     "task": "Document the deployment process",
+     "owner": "Maya",
+     "deadline": "2026-11-06",
+     "template": "happy_to",
+     "when": "in_days"
+    },
+    {
+     "task": "Migrate the old reports to the new dashboard",
+     "owner": "Yusuf",
+     "deadline": "2026-11-30",
+     "template": "can_you",
+     "when": "eom"
+    },
+    {
+     "task": "Prepare the quarterly metrics deck",
+     "owner": "Yusuf",
+     "deadline": null,
+     "template": "id_like",
+     "when": "none"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "question",
+     "text": "Did you update the onboarding checklist?"
+    },
+    {
+     "kind": "status",
+     "text": "The design mockups went live on Monday."
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could follow up with the Acme team at some point."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to review the pull request for the billing service this week."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't draft the customer announcement before Monday."
+    },
+    {
+     "kind": "status",
+     "text": "I finished the release notes yesterday."
+    },
+    {
+     "kind": "hedge",
+     "text": "We could probably arrange travel for the conference if we have time."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to collect feedback from the pilot users this week."
+    },
+    {
+     "kind": "status",
+     "text": "The quarterly report went live on Monday."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me share my screen."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me explain how the process works."
+    }
+   ]
+  },
+  {
+   "file": "syn_03_2026-11-03.txt",
+   "meeting_date": "2026-11-03",
+   "action_items": [
+    {
+     "task": "Renew the software licences",
+     "owner": "Mateo",
+     "deadline": "2026-11-09",
+     "template": "happy_to",
+     "when": "weekday"
+    },
+    {
+     "task": "Interview two candidates for the designer role",
+     "owner": "Noah",
+     "deadline": "2026-11-06",
+     "template": "i_will",
+     "when": "in_days"
+    },
+    {
+     "task": "Email the signed contract to legal",
+     "owner": null,
+     "deadline": "2026-11-30",
+     "template": "someone_should",
+     "when": "eom"
+    },
+    {
+     "task": "Document the deployment process",
+     "owner": "Noah",
+     "deadline": null,
+     "template": "happy_to",
+     "when": "none"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "question",
+     "text": "Who is able to confirm the venue booking?"
+    },
+    {
+     "kind": "question",
+     "text": "Did you refresh the sales forecast?"
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't share the meeting notes with the team before Monday."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me know if that works."
+    },
+    {
+     "kind": "status",
+     "text": "The pricing sheet went live on Monday."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't set up the staging environment before Monday."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to post the job description on the careers page this week."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "I'll go first."
+    }
+   ]
+  },
+  {
+   "file": "syn_04_2026-09-14.txt",
+   "meeting_date": "2026-09-14",
+   "action_items": [
+    {
+     "task": "Review the pull request for the billing service",
+     "owner": "Kenji",
+     "deadline": null,
+     "template": "id_like",
+     "when": "before_event"
+    },
+    {
+     "task": "Clean up the support backlog",
+     "owner": "Elena",
+     "deadline": null,
+     "template": "ill",
+     "when": "none"
+    },
+    {
+     "task": "Run the load test on the checkout service",
+     "owner": "Elena",
+     "deadline": null,
+     "template": "happy_to",
+     "when": "none"
+    },
+    {
+     "task": "Share the meeting notes with the team",
+     "owner": null,
+     "deadline": null,
+     "template": "we_should",
+     "when": "none"
+    },
+    {
+     "task": "Create tickets for the remaining bugs",
+     "owner": "Kenji",
+     "deadline": "2026-09-25",
+     "template": "over_to_you",
+     "when": "eow_next"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "question",
+     "text": "Did you follow up with the Acme team?"
+    },
+    {
+     "kind": "question",
+     "text": "Did you clean up the support backlog?"
+    },
+    {
+     "kind": "negation",
+     "text": "I can't set up the staging environment before Monday."
+    },
+    {
+     "kind": "question",
+     "text": "Should we fix the login bug on the mobile app?"
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the API documentation."
+    },
+    {
+     "kind": "hedge",
+     "text": "It might be worth it to create tickets for the remaining bugs sometime."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to update the pricing page this week."
+    }
+   ]
+  },
+  {
+   "file": "syn_05_2026-09-17.txt",
+   "meeting_date": "2026-09-17",
+   "action_items": [
+    {
+     "task": "Benchmark the new search index",
+     "owner": "Ravi Silva",
+     "deadline": "2026-09-23",
+     "template": "happy_to",
+     "when": "weekday"
+    },
+    {
+     "task": "Clean up the support backlog",
+     "owner": "Ines Moreau",
+     "deadline": null,
+     "template": "id_like",
+     "when": "none"
+    },
+    {
+     "task": "Update the pricing page",
+     "owner": null,
+     "deadline": null,
+     "template": "we_need",
+     "when": "none"
+    },
+    {
+     "task": "Draft the customer announcement",
+     "owner": "Kenji Okafor",
+     "deadline": "2026-09-18",
+     "template": "can_i_get",
+     "when": "tomorrow"
+    },
+    {
+     "task": "Arrange travel for the conference",
+     "owner": "Omar Okafor",
+     "deadline": null,
+     "template": "on_it",
+     "when": "none"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "negation",
+     "text": "I can't book a room for the offsite before Monday."
+    },
+    {
+     "kind": "hedge",
+     "text": "It might be worth it to arrange travel for the conference sometime."
+    },
+    {
+     "kind": "hedge",
+     "text": "We could probably confirm the venue booking if we have time."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me pull up the dashboard."
+    },
+    {
+     "kind": "status",
+     "text": "The API documentation went live on Monday."
+    },
+    {
+     "kind": "question",
+     "text": "Who is able to audit the access permissions for the shared drive?"
+    },
+    {
+     "kind": "status",
+     "text": "The vendor comparison went live on Monday."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let's move on to the next item."
+    },
+    {
+     "kind": "question",
+     "text": "Who is able to create tickets for the remaining bugs?"
+    }
+   ]
+  },
+  {
+   "file": "syn_06_2026-11-12.vtt",
+   "meeting_date": "2026-11-12",
+   "action_items": [
+    {
+     "task": "Update the onboarding checklist",
+     "owner": "Elena Kim",
+     "deadline": null,
+     "template": "id_like",
+     "when": "none"
+    },
+    {
+     "task": "Follow up with the Acme team",
+     "owner": "Lucas Reyes",
+     "deadline": "2026-11-12",
+     "template": "lets_have",
+     "when": "eod"
+    },
+    {
+     "task": "Create tickets for the remaining bugs",
+     "owner": "Lucas Reyes",
+     "deadline": null,
+     "template": "going_to",
+     "when": "none"
+    },
+    {
+     "task": "Share the meeting notes with the team",
+     "owner": "Elena Kim",
+     "deadline": "2026-11-20",
+     "template": "happy_to",
+     "when": "eow_next"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "negation",
+     "text": "I won't be able to update the onboarding checklist this week."
+    },
+    {
+     "kind": "status",
+     "text": "We closed twelve tickets last week."
+    },
+    {
+     "kind": "status",
+     "text": "I finished the quarterly report yesterday."
+    },
+    {
+     "kind": "question",
+     "text": "Should we audit the access permissions for the shared drive?"
+    },
+    {
+     "kind": "status",
+     "text": "The pricing sheet is blocked on legal."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't order the new laptops for the interns before Monday."
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could set up the staging environment at some point."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let's move on to the next item."
+    },
+    {
+     "kind": "status",
+     "text": "The pricing sheet went live on Monday."
+    }
+   ]
+  },
+  {
+   "file": "syn_07_2026-11-02.vtt",
+   "meeting_date": "2026-11-02",
+   "action_items": [
+    {
+     "task": "Send the revised budget to finance",
+     "owner": "Priya Silva",
+     "deadline": "2026-11-07",
+     "template": "let_me",
+     "when": "in_days"
+    },
+    {
+     "task": "Collect feedback from the pilot users",
+     "owner": "Chloe Larsen",
+     "deadline": "2026-11-12",
+     "template": "on_me",
+     "when": "next_weekday"
+    },
+    {
+     "task": "Renew the software licences",
+     "owner": "Daniel Nguyen",
+     "deadline": null,
+     "template": "on_me",
+     "when": "none"
+    },
+    {
+     "task": "Update the pricing page",
+     "owner": "Elena Reyes",
+     "deadline": "2026-11-03",
+     "template": "please",
+     "when": "tomorrow"
+    },
+    {
+     "task": "Document the deployment process",
+     "owner": "Daniel Nguyen",
+     "deadline": "2026-11-23",
+     "template": "promise",
+     "when": "month_day"
+    },
+    {
+     "task": "Benchmark the new search index",
+     "owner": "Daniel Nguyen",
+     "deadline": "2026-11-05",
+     "template": "on_me",
+     "when": "weekday"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "negation",
+     "text": "I won't be able to audit the access permissions for the shared drive this week."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "I'll go first."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to collect feedback from the pilot users this week."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to create tickets for the remaining bugs this week."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let's move on to the next item."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the API documentation last week."
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could create tickets for the remaining bugs at some point."
+    }
+   ]
+  },
+  {
+   "file": "syn_08_2026-11-12.txt",
+   "meeting_date": "2026-11-12",
+   "action_items": [
+    {
+     "task": "Arrange travel for the conference",
+     "owner": "Tessa",
+     "deadline": "2026-11-12",
+     "template": "lets_have",
+     "when": "eod"
+    },
+    {
+     "task": "Collect feedback from the pilot users",
+     "owner": "Elena",
+     "deadline": null,
+     "template": "let_me",
+     "when": "none"
+    },
+    {
+     "task": "Share the meeting notes with the team",
+     "owner": "Tessa",
+     "deadline": "2026-11-15",
+     "template": "can_i_get",
+     "when": "in_days"
+    },
+    {
+     "task": "Translate the help articles into Spanish",
+     "owner": "Liam",
+     "deadline": null,
+     "template": "action_item",
+     "when": "none"
+    },
+    {
+     "task": "Prepare the quarterly metrics deck",
+     "owner": "Priya",
+     "deadline": "2026-11-14",
+     "template": "going_to",
+     "when": "in_days"
+    },
+    {
+     "task": "Interview two candidates for the designer role",
+     "owner": null,
+     "deadline": "2026-11-18",
+     "template": "we_need",
+     "when": "weekday"
+    },
+    {
+     "task": "Create tickets for the remaining bugs",
+     "owner": "Elena",
+     "deadline": null,
+     "template": "promise",
+     "when": "none"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "negation",
+     "text": "I can't write the test plan for the new API before Monday."
+    },
+    {
+     "kind": "question",
+     "text": "Did you audit the access permissions for the shared drive?"
+    },
+    {
+     "kind": "status",
+     "text": "The pricing sheet is blocked on legal."
+    },
+    {
+     "kind": "hedge",
+     "text": "We could probably clean up the support backlog if we have time."
+    },
+    {
+     "kind": "question",
+     "text": "Who is able to set up the staging environment?"
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "status",
+     "text": "We closed twelve tickets last week."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "I'll go first."
+    },
+    {
+     "kind": "hedge",
+     "text": "We could probably post the job description on the careers page if we have time."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't benchmark the new search index before Monday."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "I'll go first."
+    }
+   ]
+  },
+  {
+   "file": "syn_09_2026-10-20.txt",
+   "meeting_date": "2026-10-20",
+   "action_items": [
+    {
+     "task": "Email the signed contract to legal",
+     "owner": "Lucas Silva",
+     "deadline": "2026-10-21",
+     "template": "happy_to",
+     "when": "tomorrow"
+    },
+    {
+     "task": "Audit the access permissions for the shared drive",
+     "owner": "Ravi Larsen",
+     "deadline": "2026-10-28",
+     "template": "happy_to",
+     "when": "next_weekday"
+    },
+    {
+     "task": "Run the load test on the checkout service",
+     "owner": "Olivia Okafor",
+     "deadline": null,
+     "template": "i_will",
+     "when": "none"
+    },
+    {
+     "task": "Arrange travel for the conference",
+     "owner": null,
+     "deadline": "2026-10-23",
+     "template": "we_need",
+     "when": "weekday"
+    },
+    {
+     "task": "Write the test plan for the new API",
+     "owner": "Olivia Okafor",
+     "deadline": null,
+     "template": "need_to",
+     "when": "end_of_sprint"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could collect feedback from the pilot users at some point."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "question",
+     "text": "Did you update the onboarding checklist?"
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let's move on to the next item."
+    },
+    {
+     "kind": "hedge",
+     "text": "We could probably clean up the support backlog if we have time."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me share my screen."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "I'll summarise the feedback quickly."
+    }
+   ]
+  },
+  {
+   "file": "syn_10_2026-10-14.txt",
+   "meeting_date": "2026-10-14",
+   "action_items": [
+    {
+     "task": "Arrange travel for the conference",
+     "owner": null,
+     "deadline": null,
+     "template": "we_should",
+     "when": "none"
+    },
+    {
+     "task": "Document the deployment process",
+     "owner": null,
+     "deadline": "2026-10-15",
+     "template": "we_should",
+     "when": "tomorrow"
+    },
+    {
+     "task": "Review the pull request for the billing service",
+     "owner": "Omar",
+     "deadline": "2026-10-15",
+     "template": "please",
+     "when": "tomorrow"
+    },
+    {
+     "task": "Prepare the quarterly metrics deck",
+     "owner": "Zoe",
+     "deadline": "2026-10-15",
+     "template": "can_you",
+     "when": "tomorrow"
+    },
+    {
+     "task": "Book a room for the offsite",
+     "owner": "Daniel",
+     "deadline": "2026-10-23",
+     "template": "can_you",
+     "when": "next_weekday"
+    },
+    {
+     "task": "Share the meeting notes with the team",
+     "owner": "Omar",
+     "deadline": "2026-10-16",
+     "template": "action_item",
+     "when": "weekday"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "hedge",
+     "text": "It might be worth it to send the revised budget to finance sometime."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the pricing sheet."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the quarterly report."
+    },
+    {
+     "kind": "status",
+     "text": "We closed twelve tickets last week."
+    },
+    {
+     "kind": "hedge",
+     "text": "It might be worth it to interview two candidates for the designer role sometime."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the API documentation last week."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me explain how the process works."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the quarterly report last week."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to schedule a call with the vendor this week."
+    }
+   ]
+  },
+  {
+   "file": "syn_11_2026-09-29.txt",
+   "meeting_date": "2026-09-29",
+   "action_items": [
+    {
+     "task": "Arrange travel for the conference",
+     "owner": null,
+     "deadline": "2026-10-05",
+     "template": "we_need",
+     "when": "month_day"
+    },
+    {
+     "task": "Update the onboarding checklist",
+     "owner": "Sofia",
+     "deadline": "2026-09-30",
+     "template": "over_to_you",
+     "when": "tomorrow"
+    },
+    {
+     "task": "Follow up with the Acme team",
+     "owner": "Isla",
+     "deadline": "2026-10-07",
+     "template": "on_it",
+     "when": "next_weekday"
+    },
+    {
+     "task": "Share the meeting notes with the team",
+     "owner": "Isla",
+     "deadline": "2026-10-01",
+     "template": "promise",
+     "when": "weekday"
+    },
+    {
+     "task": "Clean up the support backlog",
+     "owner": "Wendy",
+     "deadline": "2026-10-11",
+     "template": "is_going_to",
+     "when": "ordinal"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "question",
+     "text": "Did you order the new laptops for the interns?"
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't review the pull request for the billing service before Monday."
+    },
+    {
+     "kind": "status",
+     "text": "The pricing sheet is blocked on legal."
+    },
+    {
+     "kind": "question",
+     "text": "Who is able to prepare the quarterly metrics deck?"
+    },
+    {
+     "kind": "question",
+     "text": "Did you write the test plan for the new API?"
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me share my screen."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "status",
+     "text": "The release notes is blocked on legal."
+    }
+   ]
+  },
+  {
+   "file": "syn_12_2026-11-16.vtt",
+   "meeting_date": "2026-11-16",
+   "action_items": [
+    {
+     "task": "Write the test plan for the new API",
+     "owner": "Noah",
+     "deadline": "2026-11-17",
+     "template": "promise",
+     "when": "weekday"
+    },
+    {
+     "task": "Set up the staging environment",
+     "owner": "Zoe",
+     "deadline": null,
+     "template": "youll_need",
+     "when": "before_event"
+    },
+    {
+     "task": "Follow up with the Acme team",
+     "owner": "Noah",
+     "deadline": "2026-11-19",
+     "template": "lets_have",
+     "when": "in_days"
+    },
+    {
+     "task": "Fix the login bug on the mobile app",
+     "owner": "Lucas",
+     "deadline": "2026-11-30",
+     "template": "please",
+     "when": "eom"
+    },
+    {
+     "task": "Update the onboarding checklist",
+     "owner": "Noah",
+     "deadline": null,
+     "template": "on_me",
+     "when": "none"
+    },
+    {
+     "task": "Schedule a call with the vendor",
+     "owner": "Zoe",
+     "deadline": null,
+     "template": "can_i_get",
+     "when": "before_event"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "negation",
+     "text": "I won't be able to set up the staging environment this week."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "question",
+     "text": "Did you update the onboarding checklist?"
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the pricing sheet."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the vendor comparison."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me explain how the process works."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to interview two candidates for the designer role this week."
+    }
+   ]
+  },
+  {
+   "file": "syn_13_2026-10-28.txt",
+   "meeting_date": "2026-10-28",
+   "action_items": [
+    {
+     "task": "Post the job description on the careers page",
+     "owner": "Sofia Larsen",
+     "deadline": "2026-11-03",
+     "template": "can_i_get",
+     "when": "in_days"
+    },
+    {
+     "task": "Set up the staging environment",
+     "owner": null,
+     "deadline": null,
+     "template": "someone_should",
+     "when": "none"
+    },
+    {
+     "task": "Clean up the support backlog",
+     "owner": "Yusuf Kim",
+     "deadline": "2026-11-02",
+     "template": "ill",
+     "when": "in_days"
+    },
+    {
+     "task": "Create tickets for the remaining bugs",
+     "owner": "Yusuf Kim",
+     "deadline": "2026-10-29",
+     "template": "promise",
+     "when": "weekday"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "hedge",
+     "text": "Maybe we could interview two candidates for the designer role at some point."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the API documentation."
+    },
+    {
+     "kind": "question",
+     "text": "Who is able to follow up with the Acme team?"
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "I'll go first."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me share my screen."
+    },
+    {
+     "kind": "question",
+     "text": "Should we order the new laptops for the interns?"
+    },
+    {
+     "kind": "hedge",
+     "text": "It might be worth it to draft the customer announcement sometime."
+    },
+    {
+     "kind": "question",
+     "text": "Did you prepare the quarterly metrics deck?"
+    },
+    {
+     "kind": "hedge",
+     "text": "We could probably prepare the quarterly metrics deck if we have time."
+    }
+   ]
+  },
+  {
+   "file": "syn_14_2026-11-11.vtt",
+   "meeting_date": "2026-11-11",
+   "action_items": [
+    {
+     "task": "Update the onboarding checklist",
+     "owner": "Sofia",
+     "deadline": "2026-11-12",
+     "template": "id_like",
+     "when": "weekday"
+    },
+    {
+     "task": "Collect feedback from the pilot users",
+     "owner": "Nadia",
+     "deadline": "2026-11-12",
+     "template": "going_to",
+     "when": "tomorrow"
+    },
+    {
+     "task": "Email the signed contract to legal",
+     "owner": "Sofia",
+     "deadline": null,
+     "template": "let_me",
+     "when": "none"
+    },
+    {
+     "task": "Update the pricing page",
+     "owner": "Sofia",
+     "deadline": "2026-11-17",
+     "template": "lets_have",
+     "when": "next_weekday"
+    },
+    {
+     "task": "Confirm the venue booking",
+     "owner": "Amara",
+     "deadline": null,
+     "template": "action_item",
+     "when": "before_event"
+    },
+    {
+     "task": "Post the job description on the careers page",
+     "owner": null,
+     "deadline": "2026-11-15",
+     "template": "we_need",
+     "when": "in_days"
+    },
+    {
+     "task": "Interview two candidates for the designer role",
+     "owner": "Sofia",
+     "deadline": null,
+     "template": "on_it",
+     "when": "none"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to write the test plan for the new API this week."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "hedge",
+     "text": "It might be worth it to book a room for the offsite sometime."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the quarterly report last week."
+    },
+    {
+     "kind": "question",
+     "text": "Who is able to email the signed contract to legal?"
+    },
+    {
+     "kind": "negation",
+     "text": "I can't set up the staging environment before Monday."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the release notes."
+    },
+    {
+     "kind": "hedge",
+     "text": "We could probably run the load test on the checkout service if we have time."
+    },
+    {
+     "kind": "status",
+     "text": "The quarterly report is blocked on legal."
+    }
+   ]
+  },
+  {
+   "file": "syn_15_2026-09-21.txt",
+   "meeting_date": "2026-09-21",
+   "action_items": [
+    {
+     "task": "Prepare the quarterly metrics deck",
+     "owner": "Victor Patel",
+     "deadline": "2026-10-01",
+     "template": "promise",
+     "when": "next_weekday"
+    },
+    {
+     "task": "Set up the staging environment",
+     "owner": "Victor Patel",
+     "deadline": null,
+     "template": "happy_to",
+     "when": "none"
+    },
+    {
+     "task": "Update the pricing page",
+     "owner": "Gavin Patel",
+     "deadline": null,
+     "template": "need_to",
+     "when": "none"
+    },
+    {
+     "task": "Post the job description on the careers page",
+     "owner": "Omar Moreau",
+     "deadline": null,
+     "template": "youll_need",
+     "when": "none"
+    },
+    {
+     "task": "Collect feedback from the pilot users",
+     "owner": "Gavin Patel",
+     "deadline": "2026-10-05",
+     "template": "please",
+     "when": "within_weeks"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "meeting_activity",
+     "text": "I'll summarise the feedback quickly."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let's move on to the next item."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't arrange travel for the conference before Monday."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the pricing sheet last week."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the API documentation last week."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the release notes last week."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't document the deployment process before Monday."
+    },
+    {
+     "kind": "status",
+     "text": "I finished the API documentation yesterday."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't renew the software licences before Monday."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me explain how the process works."
+    }
+   ]
+  },
+  {
+   "file": "syn_16_2026-09-11.txt",
+   "meeting_date": "2026-09-11",
+   "action_items": [
+    {
+     "task": "Refresh the sales forecast",
+     "owner": "Hana",
+     "deadline": null,
+     "template": "is_going_to",
+     "when": "none"
+    },
+    {
+     "task": "Create tickets for the remaining bugs",
+     "owner": "Hana",
+     "deadline": "2026-09-14",
+     "template": "let_me",
+     "when": "next_weekday"
+    },
+    {
+     "task": "Fix the login bug on the mobile app",
+     "owner": "Felix",
+     "deadline": null,
+     "template": "lets_have",
+     "when": "none"
+    },
+    {
+     "task": "Order the new laptops for the interns",
+     "owner": null,
+     "deadline": null,
+     "template": "we_should",
+     "when": "none"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "negation",
+     "text": "I can't fix the login bug on the mobile app before Monday."
+    },
+    {
+     "kind": "question",
+     "text": "Who is able to update the pricing page?"
+    },
+    {
+     "kind": "status",
+     "text": "We closed twelve tickets last week."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the vendor comparison."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the API documentation."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me share my screen."
+    },
+    {
+     "kind": "status",
+     "text": "We closed twelve tickets last week."
+    },
+    {
+     "kind": "question",
+     "text": "Should we fix the login bug on the mobile app?"
+    },
+    {
+     "kind": "status",
+     "text": "I finished the API documentation yesterday."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't audit the access permissions for the shared drive before Monday."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me know if that works."
+    }
+   ]
+  },
+  {
+   "file": "syn_17_2026-10-29.txt",
+   "meeting_date": "2026-10-29",
+   "action_items": [
+    {
+     "task": "Run the load test on the checkout service",
+     "owner": "Ethan Okafor",
+     "deadline": null,
+     "template": "ill",
+     "when": "end_of_sprint"
+    },
+    {
+     "task": "Renew the software licences",
+     "owner": null,
+     "deadline": "2026-10-31",
+     "template": "we_should",
+     "when": "eom"
+    },
+    {
+     "task": "Book a room for the offsite",
+     "owner": "Ines Nguyen",
+     "deadline": "2026-11-04",
+     "template": "agreed_to",
+     "when": "next_weekday"
+    },
+    {
+     "task": "Share the meeting notes with the team",
+     "owner": null,
+     "deadline": null,
+     "template": "we_need",
+     "when": "none"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "status",
+     "text": "The API documentation went live on Monday."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the design mockups last week."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the quarterly report last week."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't translate the help articles into Spanish before Monday."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't create tickets for the remaining bugs before Monday."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let's move on to the next item."
+    }
+   ]
+  },
+  {
+   "file": "syn_18_2026-12-14.txt",
+   "meeting_date": "2026-12-14",
+   "action_items": [
+    {
+     "task": "Set up the staging environment",
+     "owner": "Zoe Larsen",
+     "deadline": "2026-12-15",
+     "template": "can_i_get",
+     "when": "tomorrow"
+    },
+    {
+     "task": "Arrange travel for the conference",
+     "owner": "Chloe Nguyen",
+     "deadline": "2026-12-18",
+     "template": "id_like",
+     "when": "weekday"
+    },
+    {
+     "task": "Order the new laptops for the interns",
+     "owner": "Chloe Nguyen",
+     "deadline": "2026-12-15",
+     "template": "on_it",
+     "when": "tomorrow"
+    },
+    {
+     "task": "Fix the login bug on the mobile app",
+     "owner": "Zoe Larsen",
+     "deadline": "2026-12-31",
+     "template": "action_item",
+     "when": "eom"
+    },
+    {
+     "task": "Migrate the old reports to the new dashboard",
+     "owner": "Omar Okafor",
+     "deadline": null,
+     "template": "need_to",
+     "when": "none"
+    },
+    {
+     "task": "Run the load test on the checkout service",
+     "owner": "Omar Okafor",
+     "deadline": "2026-12-17",
+     "template": "need_to",
+     "when": "weekday"
+    },
+    {
+     "task": "Draft the customer announcement",
+     "owner": "Omar Okafor",
+     "deadline": null,
+     "template": "lets_have",
+     "when": "none"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "meeting_activity",
+     "text": "I'll go first."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to update the pricing page this week."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the design mockups last week."
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could translate the help articles into Spanish at some point."
+    },
+    {
+     "kind": "hedge",
+     "text": "We could probably update the onboarding checklist if we have time."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "question",
+     "text": "Did you draft the customer announcement?"
+    },
+    {
+     "kind": "hedge",
+     "text": "We could probably send the revised budget to finance if we have time."
+    },
+    {
+     "kind": "question",
+     "text": "Who is able to document the deployment process?"
+    },
+    {
+     "kind": "question",
+     "text": "Did you order the new laptops for the interns?"
+    }
+   ]
+  },
+  {
+   "file": "syn_19_2026-11-02.txt",
+   "meeting_date": "2026-11-02",
+   "action_items": [
+    {
+     "task": "Confirm the venue booking",
+     "owner": "Tessa",
+     "deadline": "2026-11-20",
+     "template": "id_like",
+     "when": "month_day"
+    },
+    {
+     "task": "Audit the access permissions for the shared drive",
+     "owner": "Tessa",
+     "deadline": "2026-11-13",
+     "template": "can_i_get",
+     "when": "next_weekday"
+    },
+    {
+     "task": "Order the new laptops for the interns",
+     "owner": "Victor",
+     "deadline": "2026-11-13",
+     "template": "on_it",
+     "when": "eow_next"
+    },
+    {
+     "task": "Book a room for the offsite",
+     "owner": "Victor",
+     "deadline": null,
+     "template": "happy_to",
+     "when": "none"
+    },
+    {
+     "task": "Run the load test on the checkout service",
+     "owner": "Amara",
+     "deadline": "2026-11-03",
+     "template": "promise",
+     "when": "weekday"
+    },
+    {
+     "task": "Post the job description on the careers page",
+     "owner": "Arjun",
+     "deadline": null,
+     "template": "going_to",
+     "when": "none"
+    },
+    {
+     "task": "Schedule a call with the vendor",
+     "owner": "Amara",
+     "deadline": null,
+     "template": "promise",
+     "when": "none"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "hedge",
+     "text": "We could probably collect feedback from the pilot users if we have time."
+    },
+    {
+     "kind": "status",
+     "text": "We closed twelve tickets last week."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could run the load test on the checkout service at some point."
+    },
+    {
+     "kind": "hedge",
+     "text": "We could probably write the test plan for the new API if we have time."
+    },
+    {
+     "kind": "hedge",
+     "text": "We could probably email the signed contract to legal if we have time."
+    }
+   ]
+  },
+  {
+   "file": "syn_20_2026-10-30.txt",
+   "meeting_date": "2026-10-30",
+   "action_items": [
+    {
+     "task": "Run the load test on the checkout service",
+     "owner": "Noah",
+     "deadline": null,
+     "template": "will",
+     "when": "end_of_sprint"
+    },
+    {
+     "task": "Arrange travel for the conference",
+     "owner": "Noah",
+     "deadline": null,
+     "template": "let_me",
+     "when": "before_event"
+    },
+    {
+     "task": "Review the pull request for the billing service",
+     "owner": "Arjun",
+     "deadline": "2026-11-02",
+     "template": "can_you",
+     "when": "next_weekday"
+    },
+    {
+     "task": "Draft the customer announcement",
+     "owner": "Amara",
+     "deadline": "2026-11-06",
+     "template": "youll_need",
+     "when": "eow_next"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "past",
+     "text": "I updated the release notes last week."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "question",
+     "text": "Should we post the job description on the careers page?"
+    },
+    {
+     "kind": "hedge",
+     "text": "We could probably collect feedback from the pilot users if we have time."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me know if that works."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the vendor comparison."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "I'll summarise the feedback quickly."
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could renew the software licences at some point."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't confirm the venue booking before Monday."
+    },
+    {
+     "kind": "question",
+     "text": "Should we arrange travel for the conference?"
+    }
+   ]
+  },
+  {
+   "file": "syn_21_2026-10-19.vtt",
+   "meeting_date": "2026-10-19",
+   "action_items": [
+    {
+     "task": "Prepare the quarterly metrics deck",
+     "owner": "Ethan",
+     "deadline": "2026-11-03",
+     "template": "will",
+     "when": "ordinal"
+    },
+    {
+     "task": "Draft the customer announcement",
+     "owner": "Ethan",
+     "deadline": null,
+     "template": "need_to",
+     "when": "none"
+    },
+    {
+     "task": "Interview two candidates for the designer role",
+     "owner": "Victor",
+     "deadline": null,
+     "template": "i_will",
+     "when": "none"
+    },
+    {
+     "task": "Renew the software licences",
+     "owner": null,
+     "deadline": null,
+     "template": "someone_should",
+     "when": "none"
+    },
+    {
+     "task": "Arrange travel for the conference",
+     "owner": "Daniel",
+     "deadline": null,
+     "template": "can_you",
+     "when": "none"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "meeting_activity",
+     "text": "Let me explain how the process works."
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could schedule a call with the vendor at some point."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me know if that works."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the release notes last week."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to send the revised budget to finance this week."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the quarterly report last week."
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could email the signed contract to legal at some point."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    }
+   ]
+  },
+  {
+   "file": "syn_22_2026-11-16.txt",
+   "meeting_date": "2026-11-16",
+   "action_items": [
+    {
+     "task": "Arrange travel for the conference",
+     "owner": null,
+     "deadline": "2026-11-17",
+     "template": "we_need",
+     "when": "weekday"
+    },
+    {
+     "task": "Migrate the old reports to the new dashboard",
+     "owner": null,
+     "deadline": "2026-11-19",
+     "template": "someone_should",
+     "when": "weekday"
+    },
+    {
+     "task": "Confirm the venue booking",
+     "owner": "Mateo Patel",
+     "deadline": "2026-11-30",
+     "template": "let_me",
+     "when": "within_weeks"
+    },
+    {
+     "task": "Book a room for the offsite",
+     "owner": "Liam Moreau",
+     "deadline": "2026-11-25",
+     "template": "agreed_to",
+     "when": "next_weekday"
+    },
+    {
+     "task": "Create tickets for the remaining bugs",
+     "owner": null,
+     "deadline": null,
+     "template": "someone_should",
+     "when": "end_of_sprint"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "hedge",
+     "text": "It might be worth it to follow up with the Acme team sometime."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't follow up with the Acme team before Monday."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to post the job description on the careers page this week."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to refresh the sales forecast this week."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me explain how the process works."
+    },
+    {
+     "kind": "hedge",
+     "text": "It might be worth it to clean up the support backlog sometime."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me know if that works."
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could arrange travel for the conference at some point."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the vendor comparison last week."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to draft the customer announcement this week."
+    },
+    {
+     "kind": "question",
+     "text": "Should we share the meeting notes with the team?"
+    }
+   ]
+  },
+  {
+   "file": "syn_23_2026-09-08.vtt",
+   "meeting_date": "2026-09-08",
+   "action_items": [
+    {
+     "task": "Run the load test on the checkout service",
+     "owner": "Noah",
+     "deadline": "2026-10-01",
+     "template": "promise",
+     "when": "month_day"
+    },
+    {
+     "task": "Email the signed contract to legal",
+     "owner": "Sofia",
+     "deadline": "2026-09-22",
+     "template": "over_to_you",
+     "when": "within_weeks"
+    },
+    {
+     "task": "Translate the help articles into Spanish",
+     "owner": null,
+     "deadline": "2026-09-08",
+     "template": "someone_should",
+     "when": "eod"
+    },
+    {
+     "task": "Post the job description on the careers page",
+     "owner": "Liam",
+     "deadline": "2026-09-30",
+     "template": "action_item",
+     "when": "eom"
+    },
+    {
+     "task": "Document the deployment process",
+     "owner": "Liam",
+     "deadline": "2026-09-11",
+     "template": "happy_to",
+     "when": "weekday"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "question",
+     "text": "Should we book a room for the offsite?"
+    },
+    {
+     "kind": "hedge",
+     "text": "It might be worth it to prepare the quarterly metrics deck sometime."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me know if that works."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me know if that works."
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could send the revised budget to finance at some point."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Can you hear me okay?"
+    },
+    {
+     "kind": "status",
+     "text": "The API documentation went live on Monday."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't update the pricing page before Monday."
+    }
+   ]
+  },
+  {
+   "file": "syn_24_2026-11-09.txt",
+   "meeting_date": "2026-11-09",
+   "action_items": [
+    {
+     "task": "Arrange travel for the conference",
+     "owner": "Amara",
+     "deadline": "2026-11-09",
+     "template": "ill",
+     "when": "eod"
+    },
+    {
+     "task": "Translate the help articles into Spanish",
+     "owner": "Elena",
+     "deadline": "2026-11-10",
+     "template": "can_i_get",
+     "when": "weekday"
+    },
+    {
+     "task": "Create tickets for the remaining bugs",
+     "owner": "Sofia",
+     "deadline": "2026-11-12",
+     "template": "id_like",
+     "when": "weekday"
+    },
+    {
+     "task": "Renew the software licences",
+     "owner": "Sofia",
+     "deadline": "2026-11-11",
+     "template": "please",
+     "when": "weekday"
+    },
+    {
+     "task": "Draft the customer announcement",
+     "owner": "Sofia",
+     "deadline": null,
+     "template": "going_to",
+     "when": "none"
+    },
+    {
+     "task": "Book a room for the offsite",
+     "owner": "Elena",
+     "deadline": null,
+     "template": "promise",
+     "when": "none"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "meeting_activity",
+     "text": "Can you hear me okay?"
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could prepare the quarterly metrics deck at some point."
+    },
+    {
+     "kind": "question",
+     "text": "Who is able to draft the customer announcement?"
+    },
+    {
+     "kind": "negation",
+     "text": "I can't arrange travel for the conference before Monday."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let's move on to the next item."
+    },
+    {
+     "kind": "question",
+     "text": "Who is able to order the new laptops for the interns?"
+    },
+    {
+     "kind": "hedge",
+     "text": "We could probably collect feedback from the pilot users if we have time."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the vendor comparison last week."
+    }
+   ]
+  },
+  {
+   "file": "syn_25_2026-11-30.txt",
+   "meeting_date": "2026-11-30",
+   "action_items": [
+    {
+     "task": "Confirm the venue booking",
+     "owner": "Priya",
+     "deadline": "2026-12-01",
+     "template": "youll_need",
+     "when": "tomorrow"
+    },
+    {
+     "task": "Email the signed contract to legal",
+     "owner": "Zoe",
+     "deadline": null,
+     "template": "id_like",
+     "when": "none"
+    },
+    {
+     "task": "Share the meeting notes with the team",
+     "owner": null,
+     "deadline": "2026-12-02",
+     "template": "we_need",
+     "when": "weekday"
+    },
+    {
+     "task": "Refresh the sales forecast",
+     "owner": "Priya",
+     "deadline": "2026-12-01",
+     "template": "going_to",
+     "when": "tomorrow"
+    },
+    {
+     "task": "Clean up the support backlog",
+     "owner": "Victor",
+     "deadline": "2026-12-08",
+     "template": "let_me",
+     "when": "next_weekday_noon"
+    },
+    {
+     "task": "Document the deployment process",
+     "owner": "Zoe",
+     "deadline": "2027-01-03",
+     "template": "on_me",
+     "when": "month_day"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "negation",
+     "text": "I won't be able to share the meeting notes with the team this week."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to order the new laptops for the interns this week."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the API documentation last week."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to prepare the quarterly metrics deck this week."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to review the pull request for the billing service this week."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the design mockups last week."
+    },
+    {
+     "kind": "question",
+     "text": "Who is able to migrate the old reports to the new dashboard?"
+    },
+    {
+     "kind": "past",
+     "text": "I updated the vendor comparison last week."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could translate the help articles into Spanish at some point."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to migrate the old reports to the new dashboard this week."
+    }
+   ]
+  },
+  {
+   "file": "syn_26_2026-11-13.txt",
+   "meeting_date": "2026-11-13",
+   "action_items": [
+    {
+     "task": "Run the load test on the checkout service",
+     "owner": "Liam",
+     "deadline": null,
+     "template": "agreed_to",
+     "when": "end_of_sprint"
+    },
+    {
+     "task": "Set up the staging environment",
+     "owner": "Liam",
+     "deadline": null,
+     "template": "on_me",
+     "when": "none"
+    },
+    {
+     "task": "Update the pricing page",
+     "owner": "Olivia",
+     "deadline": null,
+     "template": "thats_yours",
+     "when": "none"
+    },
+    {
+     "task": "Draft the customer announcement",
+     "owner": "Olivia",
+     "deadline": "2026-12-11",
+     "template": "let_me",
+     "when": "month_day"
+    },
+    {
+     "task": "Document the deployment process",
+     "owner": null,
+     "deadline": null,
+     "template": "we_need",
+     "when": "end_of_sprint"
+    },
+    {
+     "task": "Migrate the old reports to the new dashboard",
+     "owner": "Liam",
+     "deadline": null,
+     "template": "i_will",
+     "when": "none"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "past",
+     "text": "I updated the quarterly report last week."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the API documentation."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the vendor comparison."
+    },
+    {
+     "kind": "question",
+     "text": "Should we draft the customer announcement?"
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me pull up the dashboard."
+    },
+    {
+     "kind": "status",
+     "text": "The design mockups went live on Monday."
+    },
+    {
+     "kind": "question",
+     "text": "Did you translate the help articles into Spanish?"
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could arrange travel for the conference at some point."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    }
+   ]
+  },
+  {
+   "file": "syn_27_2026-10-01.txt",
+   "meeting_date": "2026-10-01",
+   "action_items": [
+    {
+     "task": "Book a room for the offsite",
+     "owner": "Isla",
+     "deadline": "2026-10-07",
+     "template": "i_will",
+     "when": "weekday"
+    },
+    {
+     "task": "Send the revised budget to finance",
+     "owner": "Omar",
+     "deadline": null,
+     "template": "going_to",
+     "when": "before_event"
+    },
+    {
+     "task": "Interview two candidates for the designer role",
+     "owner": "Omar",
+     "deadline": "2026-10-07",
+     "template": "happy_to",
+     "when": "weekday"
+    },
+    {
+     "task": "Migrate the old reports to the new dashboard",
+     "owner": "Mateo",
+     "deadline": "2026-10-01",
+     "template": "thats_yours",
+     "when": "eod"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "hedge",
+     "text": "Maybe we could draft the customer announcement at some point."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Can you hear me okay?"
+    },
+    {
+     "kind": "question",
+     "text": "Should we book a room for the offsite?"
+    },
+    {
+     "kind": "status",
+     "text": "I finished the release notes yesterday."
+    },
+    {
+     "kind": "status",
+     "text": "I finished the pricing sheet yesterday."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could follow up with the Acme team at some point."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't collect feedback from the pilot users before Monday."
+    }
+   ]
+  },
+  {
+   "file": "syn_28_2026-11-04.txt",
+   "meeting_date": "2026-11-04",
+   "action_items": [
+    {
+     "task": "Clean up the support backlog",
+     "owner": "Zoe",
+     "deadline": null,
+     "template": "let_me",
+     "when": "none"
+    },
+    {
+     "task": "Update the pricing page",
+     "owner": "Mateo",
+     "deadline": null,
+     "template": "going_to",
+     "when": "none"
+    },
+    {
+     "task": "Renew the software licences",
+     "owner": "Felix",
+     "deadline": null,
+     "template": "promise",
+     "when": "end_of_sprint"
+    },
+    {
+     "task": "Order the new laptops for the interns",
+     "owner": null,
+     "deadline": null,
+     "template": "we_need",
+     "when": "none"
+    },
+    {
+     "task": "Collect feedback from the pilot users",
+     "owner": "Felix",
+     "deadline": "2026-11-09",
+     "template": "can_i_get",
+     "when": "weekday"
+    },
+    {
+     "task": "Review the pull request for the billing service",
+     "owner": "Zoe",
+     "deadline": null,
+     "template": "let_me",
+     "when": "none"
+    },
+    {
+     "task": "Book a room for the offsite",
+     "owner": "Felix",
+     "deadline": null,
+     "template": "will",
+     "when": "none"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "status",
+     "text": "The quarterly report went live on Monday."
+    },
+    {
+     "kind": "question",
+     "text": "Did you refresh the sales forecast?"
+    },
+    {
+     "kind": "question",
+     "text": "Who is able to refresh the sales forecast?"
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could run the load test on the checkout service at some point."
+    },
+    {
+     "kind": "question",
+     "text": "Should we follow up with the Acme team?"
+    },
+    {
+     "kind": "negation",
+     "text": "I can't set up the staging environment before Monday."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't clean up the support backlog before Monday."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to review the pull request for the billing service this week."
+    },
+    {
+     "kind": "status",
+     "text": "I finished the vendor comparison yesterday."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the release notes last week."
+    }
+   ]
+  },
+  {
+   "file": "syn_29_2026-11-02.txt",
+   "meeting_date": "2026-11-02",
+   "action_items": [
+    {
+     "task": "Book a room for the offsite",
+     "owner": "Maya Kim",
+     "deadline": "2026-11-23",
+     "template": "need_to",
+     "when": "month_day"
+    },
+    {
+     "task": "Create tickets for the remaining bugs",
+     "owner": "Wendy Silva",
+     "deadline": "2026-11-05",
+     "template": "thats_yours",
+     "when": "weekday"
+    },
+    {
+     "task": "Review the pull request for the billing service",
+     "owner": "Chloe Moreau",
+     "deadline": "2026-11-03",
+     "template": "over_to_you",
+     "when": "tomorrow"
+    },
+    {
+     "task": "Translate the help articles into Spanish",
+     "owner": "Amara Haddad",
+     "deadline": null,
+     "template": "lets_have",
+     "when": "none"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "negation",
+     "text": "I won't be able to draft the customer announcement this week."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the pricing sheet last week."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't benchmark the new search index before Monday."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the vendor comparison."
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could draft the customer announcement at some point."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let's move on to the next item."
+    },
+    {
+     "kind": "hedge",
+     "text": "We could probably set up the staging environment if we have time."
+    },
+    {
+     "kind": "status",
+     "text": "We closed twelve tickets last week."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me pull up the dashboard."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the design mockups."
+    }
+   ]
+  },
+  {
+   "file": "syn_30_2026-09-10.txt",
+   "meeting_date": "2026-09-10",
+   "action_items": [
+    {
+     "task": "Set up the staging environment",
+     "owner": "Daniel Garcia",
+     "deadline": "2026-09-27",
+     "template": "happy_to",
+     "when": "month_day"
+    },
+    {
+     "task": "Schedule a call with the vendor",
+     "owner": "Priya Patel",
+     "deadline": "2026-09-14",
+     "template": "promise",
+     "when": "next_weekday"
+    },
+    {
+     "task": "Arrange travel for the conference",
+     "owner": "Priya Patel",
+     "deadline": null,
+     "template": "going_to",
+     "when": "none"
+    },
+    {
+     "task": "Book a room for the offsite",
+     "owner": "Priya Patel",
+     "deadline": "2026-09-24",
+     "template": "action_item",
+     "when": "within_weeks"
+    },
+    {
+     "task": "Clean up the support backlog",
+     "owner": "Priya Patel",
+     "deadline": null,
+     "template": "can_you",
+     "when": "none"
+    },
+    {
+     "task": "Send the revised budget to finance",
+     "owner": "Priya Patel",
+     "deadline": "2026-09-14",
+     "template": "on_it",
+     "when": "weekday"
+    },
+    {
+     "task": "Share the meeting notes with the team",
+     "owner": "Daniel Garcia",
+     "deadline": "2026-10-14",
+     "template": "lets_have",
+     "when": "month_day"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "question",
+     "text": "Should we send the revised budget to finance?"
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me share my screen."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me explain how the process works."
+    },
+    {
+     "kind": "question",
+     "text": "Did you write the test plan for the new API?"
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the release notes."
+    },
+    {
+     "kind": "status",
+     "text": "I finished the design mockups yesterday."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me pull up the dashboard."
+    },
+    {
+     "kind": "status",
+     "text": "The quarterly report went live on Monday."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Can you hear me okay?"
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    }
+   ]
+  },
+  {
+   "file": "syn_31_2026-12-07.vtt",
+   "meeting_date": "2026-12-07",
+   "action_items": [
+    {
+     "task": "Renew the software licences",
+     "owner": null,
+     "deadline": null,
+     "template": "we_need",
+     "when": "none"
+    },
+    {
+     "task": "Write the test plan for the new API",
+     "owner": null,
+     "deadline": null,
+     "template": "someone_should",
+     "when": "none"
+    },
+    {
+     "task": "Arrange travel for the conference",
+     "owner": "Lucas",
+     "deadline": "2026-12-21",
+     "template": "over_to_you",
+     "when": "within_weeks"
+    },
+    {
+     "task": "Migrate the old reports to the new dashboard",
+     "owner": "Arjun",
+     "deadline": "2026-12-22",
+     "template": "action_item",
+     "when": "month_day"
+    },
+    {
+     "task": "Send the revised budget to finance",
+     "owner": "Lucas",
+     "deadline": null,
+     "template": "ill",
+     "when": "none"
+    },
+    {
+     "task": "Draft the customer announcement",
+     "owner": "Ravi",
+     "deadline": null,
+     "template": "agreed_to",
+     "when": "none"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "status",
+     "text": "I finished the release notes yesterday."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't fix the login bug on the mobile app before Monday."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the release notes last week."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me know if that works."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the API documentation last week."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the API documentation."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to write the test plan for the new API this week."
+    },
+    {
+     "kind": "question",
+     "text": "Did you review the pull request for the billing service?"
+    },
+    {
+     "kind": "hedge",
+     "text": "We could probably collect feedback from the pilot users if we have time."
+    }
+   ]
+  },
+  {
+   "file": "syn_32_2026-10-15.txt",
+   "meeting_date": "2026-10-15",
+   "action_items": [
+    {
+     "task": "Refresh the sales forecast",
+     "owner": null,
+     "deadline": null,
+     "template": "someone_should",
+     "when": "none"
+    },
+    {
+     "task": "Confirm the venue booking",
+     "owner": "Felix Silva",
+     "deadline": "2026-10-21",
+     "template": "over_to_you",
+     "when": "weekday"
+    },
+    {
+     "task": "Follow up with the Acme team",
+     "owner": "Daniel Reyes",
+     "deadline": "2026-10-16",
+     "template": "need_to",
+     "when": "tomorrow"
+    },
+    {
+     "task": "Email the signed contract to legal",
+     "owner": "Daniel Reyes",
+     "deadline": null,
+     "template": "lets_have",
+     "when": "none"
+    },
+    {
+     "task": "Interview two candidates for the designer role",
+     "owner": "Felix Silva",
+     "deadline": "2026-10-15",
+     "template": "going_to",
+     "when": "eod"
+    },
+    {
+     "task": "Run the load test on the checkout service",
+     "owner": "Felix Silva",
+     "deadline": "2026-10-19",
+     "template": "happy_to",
+     "when": "weekday"
+    },
+    {
+     "task": "Collect feedback from the pilot users",
+     "owner": "Daniel Reyes",
+     "deadline": "2026-10-19",
+     "template": "promise",
+     "when": "next_weekday"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "status",
+     "text": "The API documentation went live on Monday."
+    },
+    {
+     "kind": "status",
+     "text": "I finished the release notes yesterday."
+    },
+    {
+     "kind": "status",
+     "text": "We closed twelve tickets last week."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't post the job description on the careers page before Monday."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "question",
+     "text": "Should we interview two candidates for the designer role?"
+    },
+    {
+     "kind": "hedge",
+     "text": "It might be worth it to audit the access permissions for the shared drive sometime."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "I'll walk you through the numbers."
+    },
+    {
+     "kind": "status",
+     "text": "I finished the quarterly report yesterday."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the API documentation."
+    }
+   ]
+  },
+  {
+   "file": "syn_33_2026-10-14.vtt",
+   "meeting_date": "2026-10-14",
+   "action_items": [
+    {
+     "task": "Update the onboarding checklist",
+     "owner": null,
+     "deadline": "2026-10-31",
+     "template": "someone_should",
+     "when": "eom"
+    },
+    {
+     "task": "Benchmark the new search index",
+     "owner": "Olivia",
+     "deadline": null,
+     "template": "please",
+     "when": "none"
+    },
+    {
+     "task": "Collect feedback from the pilot users",
+     "owner": "Felix",
+     "deadline": "2026-10-15",
+     "template": "thats_yours",
+     "when": "weekday"
+    },
+    {
+     "task": "Fix the login bug on the mobile app",
+     "owner": "Felix",
+     "deadline": "2026-10-15",
+     "template": "happy_to",
+     "when": "tomorrow"
+    },
+    {
+     "task": "Review the pull request for the billing service",
+     "owner": "Felix",
+     "deadline": null,
+     "template": "youll_need",
+     "when": "none"
+    },
+    {
+     "task": "Schedule a call with the vendor",
+     "owner": null,
+     "deadline": null,
+     "template": "we_need",
+     "when": "none"
+    },
+    {
+     "task": "Write the test plan for the new API",
+     "owner": "Amara",
+     "deadline": "2026-10-20",
+     "template": "id_like",
+     "when": "month_day"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "meeting_activity",
+     "text": "I'll go first."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the vendor comparison last week."
+    },
+    {
+     "kind": "question",
+     "text": "Should we arrange travel for the conference?"
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let's move on to the next item."
+    },
+    {
+     "kind": "question",
+     "text": "Did you refresh the sales forecast?"
+    },
+    {
+     "kind": "past",
+     "text": "I updated the vendor comparison last week."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me know if that works."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the release notes."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "I'll summarise the feedback quickly."
+    },
+    {
+     "kind": "hedge",
+     "text": "It might be worth it to audit the access permissions for the shared drive sometime."
+    }
+   ]
+  },
+  {
+   "file": "syn_34_2026-09-21.txt",
+   "meeting_date": "2026-09-21",
+   "action_items": [
+    {
+     "task": "Fix the login bug on the mobile app",
+     "owner": "Noah Novak",
+     "deadline": null,
+     "template": "will",
+     "when": "none"
+    },
+    {
+     "task": "Clean up the support backlog",
+     "owner": "Kenji Silva",
+     "deadline": "2026-10-15",
+     "template": "can_i_get",
+     "when": "month_day"
+    },
+    {
+     "task": "Send the revised budget to finance",
+     "owner": "Sofia Kim",
+     "deadline": null,
+     "template": "lets_have",
+     "when": "end_of_sprint"
+    },
+    {
+     "task": "Create tickets for the remaining bugs",
+     "owner": "Ethan Larsen",
+     "deadline": "2026-10-12",
+     "template": "agreed_to",
+     "when": "month_day"
+    },
+    {
+     "task": "Refresh the sales forecast",
+     "owner": "Kenji Silva",
+     "deadline": "2026-09-22",
+     "template": "happy_to",
+     "when": "weekday"
+    },
+    {
+     "task": "Review the pull request for the billing service",
+     "owner": "Noah Novak",
+     "deadline": "2026-09-25",
+     "template": "on_it",
+     "when": "weekday"
+    },
+    {
+     "task": "Update the pricing page",
+     "owner": "Ethan Larsen",
+     "deadline": "2026-09-28",
+     "template": "will",
+     "when": "month_day"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "question",
+     "text": "Who is able to renew the software licences?"
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the design mockups."
+    },
+    {
+     "kind": "question",
+     "text": "Should we arrange travel for the conference?"
+    },
+    {
+     "kind": "status",
+     "text": "We closed twelve tickets last week."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me pull up the dashboard."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the API documentation."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't send the revised budget to finance before Monday."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the vendor comparison."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to migrate the old reports to the new dashboard this week."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't follow up with the Acme team before Monday."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the pricing sheet last week."
+    },
+    {
+     "kind": "question",
+     "text": "Who is able to fix the login bug on the mobile app?"
+    }
+   ]
+  },
+  {
+   "file": "syn_35_2026-12-16.vtt",
+   "meeting_date": "2026-12-16",
+   "action_items": [
+    {
+     "task": "Translate the help articles into Spanish",
+     "owner": "Sofia Nguyen",
+     "deadline": "2026-12-17",
+     "template": "action_item",
+     "when": "weekday"
+    },
+    {
+     "task": "Document the deployment process",
+     "owner": "Lucas Haddad",
+     "deadline": "2026-12-22",
+     "template": "thats_yours",
+     "when": "weekday"
+    },
+    {
+     "task": "Follow up with the Acme team",
+     "owner": "Hana Larsen",
+     "deadline": "2026-12-16",
+     "template": "lets_have",
+     "when": "eod"
+    },
+    {
+     "task": "Create tickets for the remaining bugs",
+     "owner": "Lucas Haddad",
+     "deadline": "2026-12-24",
+     "template": "youll_need",
+     "when": "next_weekday_noon"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "meeting_activity",
+     "text": "Let me pull up the dashboard."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to collect feedback from the pilot users this week."
+    },
+    {
+     "kind": "status",
+     "text": "I finished the pricing sheet yesterday."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the quarterly report last week."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me share my screen."
+    },
+    {
+     "kind": "status",
+     "text": "I finished the release notes yesterday."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "I'll summarise the feedback quickly."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to book a room for the offsite this week."
+    },
+    {
+     "kind": "status",
+     "text": "The release notes is blocked on legal."
+    },
+    {
+     "kind": "hedge",
+     "text": "It might be worth it to book a room for the offsite sometime."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me explain how the process works."
+    }
+   ]
+  },
+  {
+   "file": "syn_36_2026-11-17.vtt",
+   "meeting_date": "2026-11-17",
+   "action_items": [
+    {
+     "task": "Email the signed contract to legal",
+     "owner": "Hana",
+     "deadline": "2026-11-19",
+     "template": "on_me",
+     "when": "weekday"
+    },
+    {
+     "task": "Audit the access permissions for the shared drive",
+     "owner": "Zoe",
+     "deadline": "2026-11-21",
+     "template": "over_to_you",
+     "when": "in_days"
+    },
+    {
+     "task": "Send the revised budget to finance",
+     "owner": "Hana",
+     "deadline": "2026-11-18",
+     "template": "over_to_you",
+     "when": "tomorrow"
+    },
+    {
+     "task": "Order the new laptops for the interns",
+     "owner": "Chloe",
+     "deadline": "2026-11-26",
+     "template": "promise",
+     "when": "next_weekday"
+    },
+    {
+     "task": "Update the pricing page",
+     "owner": "Hana",
+     "deadline": "2026-12-23",
+     "template": "thats_yours",
+     "when": "month_day"
+    },
+    {
+     "task": "Clean up the support backlog",
+     "owner": "Maya",
+     "deadline": null,
+     "template": "going_to",
+     "when": "none"
+    },
+    {
+     "task": "Book a room for the offsite",
+     "owner": "Chloe",
+     "deadline": null,
+     "template": "promise",
+     "when": "none"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "status",
+     "text": "The release notes is blocked on legal."
+    },
+    {
+     "kind": "status",
+     "text": "The pricing sheet is blocked on legal."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the quarterly report."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the pricing sheet last week."
+    },
+    {
+     "kind": "question",
+     "text": "Should we create tickets for the remaining bugs?"
+    },
+    {
+     "kind": "negation",
+     "text": "I can't share the meeting notes with the team before Monday."
+    },
+    {
+     "kind": "decision",
+     "text": "The team agreed the timeline looks fine."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "status",
+     "text": "We closed twelve tickets last week."
+    }
+   ]
+  },
+  {
+   "file": "syn_37_2026-10-05.txt",
+   "meeting_date": "2026-10-05",
+   "action_items": [
+    {
+     "task": "Share the meeting notes with the team",
+     "owner": "Chloe",
+     "deadline": "2026-10-05",
+     "template": "i_will",
+     "when": "eod"
+    },
+    {
+     "task": "Email the signed contract to legal",
+     "owner": "Daniel",
+     "deadline": "2026-10-25",
+     "template": "id_like",
+     "when": "ordinal"
+    },
+    {
+     "task": "Audit the access permissions for the shared drive",
+     "owner": "Gavin",
+     "deadline": null,
+     "template": "over_to_you",
+     "when": "before_event"
+    },
+    {
+     "task": "Update the onboarding checklist",
+     "owner": "Chloe",
+     "deadline": "2026-10-15",
+     "template": "going_to",
+     "when": "next_weekday"
+    },
+    {
+     "task": "Document the deployment process",
+     "owner": "Chloe",
+     "deadline": "2026-10-09",
+     "template": "need_to",
+     "when": "weekday"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "negation",
+     "text": "I can't refresh the sales forecast before Monday."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to create tickets for the remaining bugs this week."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't review the pull request for the billing service before Monday."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to write the test plan for the new API this week."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "I'll walk you through the numbers."
+    },
+    {
+     "kind": "hedge",
+     "text": "It might be worth it to prepare the quarterly metrics deck sometime."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the release notes."
+    },
+    {
+     "kind": "status",
+     "text": "We closed twelve tickets last week."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to clean up the support backlog this week."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the API documentation."
+    }
+   ]
+  },
+  {
+   "file": "syn_38_2026-11-16.txt",
+   "meeting_date": "2026-11-16",
+   "action_items": [
+    {
+     "task": "Benchmark the new search index",
+     "owner": "Noah",
+     "deadline": "2026-11-16",
+     "template": "lets_have",
+     "when": "eod"
+    },
+    {
+     "task": "Interview two candidates for the designer role",
+     "owner": "Daniel",
+     "deadline": "2026-11-30",
+     "template": "on_me",
+     "when": "eom"
+    },
+    {
+     "task": "Arrange travel for the conference",
+     "owner": "Ravi",
+     "deadline": "2026-11-26",
+     "template": "id_like",
+     "when": "next_weekday"
+    },
+    {
+     "task": "Renew the software licences",
+     "owner": "Ravi",
+     "deadline": "2026-11-17",
+     "template": "i_will",
+     "when": "weekday"
+    },
+    {
+     "task": "Review the pull request for the billing service",
+     "owner": "Gavin",
+     "deadline": "2026-11-21",
+     "template": "promise",
+     "when": "in_days"
+    },
+    {
+     "task": "Follow up with the Acme team",
+     "owner": null,
+     "deadline": null,
+     "template": "we_need",
+     "when": "before_event"
+    },
+    {
+     "task": "Update the onboarding checklist",
+     "owner": "Gavin",
+     "deadline": "2026-11-17",
+     "template": "need_to",
+     "when": "tomorrow"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "hedge",
+     "text": "It might be worth it to send the revised budget to finance sometime."
+    },
+    {
+     "kind": "hedge",
+     "text": "Maybe we could update the onboarding checklist at some point."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Can you hear me okay?"
+    },
+    {
+     "kind": "question",
+     "text": "Who is able to document the deployment process?"
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me explain how the process works."
+    },
+    {
+     "kind": "hedge",
+     "text": "It might be worth it to renew the software licences sometime."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the release notes last week."
+    },
+    {
+     "kind": "past",
+     "text": "I already sent the API documentation."
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to audit the access permissions for the shared drive this week."
+    },
+    {
+     "kind": "question",
+     "text": "Should we confirm the venue booking?"
+    }
+   ]
+  },
+  {
+   "file": "syn_39_2026-09-30.txt",
+   "meeting_date": "2026-09-30",
+   "action_items": [
+    {
+     "task": "Collect feedback from the pilot users",
+     "owner": "Sofia",
+     "deadline": "2026-09-30",
+     "template": "please",
+     "when": "eod"
+    },
+    {
+     "task": "Post the job description on the careers page",
+     "owner": "Elena",
+     "deadline": "2026-10-06",
+     "template": "will",
+     "when": "weekday"
+    },
+    {
+     "task": "Document the deployment process",
+     "owner": "Elena",
+     "deadline": "2026-10-05",
+     "template": "let_me",
+     "when": "in_days"
+    },
+    {
+     "task": "Book a room for the offsite",
+     "owner": "Chloe",
+     "deadline": "2026-10-07",
+     "template": "on_me",
+     "when": "ordinal"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "meeting_activity",
+     "text": "Let me explain how the process works."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't share the meeting notes with the team before Monday."
+    },
+    {
+     "kind": "past",
+     "text": "I updated the release notes last week."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "I'll walk you through the numbers."
+    },
+    {
+     "kind": "question",
+     "text": "Should we clean up the support backlog?"
+    },
+    {
+     "kind": "negation",
+     "text": "I won't be able to renew the software licences this week."
+    },
+    {
+     "kind": "negation",
+     "text": "I can't refresh the sales forecast before Monday."
+    },
+    {
+     "kind": "hedge",
+     "text": "It might be worth it to write the test plan for the new API sometime."
+    }
+   ]
+  },
+  {
+   "file": "syn_40_2026-11-17.txt",
+   "meeting_date": "2026-11-17",
+   "action_items": [
+    {
+     "task": "Follow up with the Acme team",
+     "owner": "Mateo Okafor",
+     "deadline": "2026-11-27",
+     "template": "need_to",
+     "when": "next_weekday_noon"
+    },
+    {
+     "task": "Create tickets for the remaining bugs",
+     "owner": "Kenji Moreau",
+     "deadline": null,
+     "template": "agreed_to",
+     "when": "none"
+    },
+    {
+     "task": "Email the signed contract to legal",
+     "owner": "Kenji Moreau",
+     "deadline": null,
+     "template": "please",
+     "when": "before_event"
+    },
+    {
+     "task": "Collect feedback from the pilot users",
+     "owner": "Kenji Moreau",
+     "deadline": null,
+     "template": "please",
+     "when": "none"
+    },
+    {
+     "task": "Post the job description on the careers page",
+     "owner": "Mateo Okafor",
+     "deadline": null,
+     "template": "agreed_to",
+     "when": "none"
+    }
+   ],
+   "distractors": [
+    {
+     "kind": "negation",
+     "text": "I can't write the test plan for the new API before Monday."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "decision",
+     "text": "We decided to go with the second option."
+    },
+    {
+     "kind": "question",
+     "text": "Did you draft the customer announcement?"
+    },
+    {
+     "kind": "question",
+     "text": "Did you create tickets for the remaining bugs?"
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Can you hear me okay?"
+    },
+    {
+     "kind": "status",
+     "text": "The quarterly report went live on Monday."
+    },
+    {
+     "kind": "status",
+     "text": "I finished the release notes yesterday."
+    },
+    {
+     "kind": "meeting_activity",
+     "text": "Let me know if that works."
+    }
+   ]
+  }
+ ]
+}

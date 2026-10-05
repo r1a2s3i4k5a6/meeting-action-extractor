@@ -1,0 +1,22 @@
+{
+  "description": "Blind set: written after the rules were frozen and never used for tuning (at the time of first scoring).",
+  "meetings": [
+    {"file": "b1_vendor_sync.txt", "meeting_date": "2026-10-19", "action_items": [
+      {"task": "Get the redlines back to them", "owner": "Lucy", "deadline": "2026-10-21"},
+      {"task": "Loop in Ken", "owner": "Lucy", "deadline": null},
+      {"task": "Pull together the old pricing sheet and send it over", "owner": "Ken", "deadline": "2026-10-19"},
+      {"task": "Update the onboarding checklist", "owner": "Nora", "deadline": null},
+      {"task": "Confirm the venue booking for the offsite", "owner": "Ken", "deadline": null},
+      {"task": "Call the venue", "owner": "Ken", "deadline": "2026-10-20"},
+      {"task": "Submit your expense reports", "owner": null, "deadline": "2026-10-25"}
+    ]},
+    {"file": "b2_eng_sync.txt", "meeting_date": "2026-10-21", "action_items": [
+      {"task": "Have a fix for the dashboard bug", "owner": "Raul", "deadline": "2026-10-23"},
+      {"task": "Take over the customer call", "owner": "Quinn", "deadline": "2026-10-22"},
+      {"task": "Send the agenda to the client", "owner": "Quinn", "deadline": "2026-10-21"},
+      {"task": "Schedule the quarterly review", "owner": null, "deadline": null},
+      {"task": "Set up the quarterly review for the week of November 2nd", "owner": "Raul", "deadline": null},
+      {"task": "Make sure the slides are done before then", "owner": null, "deadline": null}
+    ]}
+  ]
+}

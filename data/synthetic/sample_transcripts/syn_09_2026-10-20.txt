@@ -1,0 +1,20 @@
+Ravi Larsen: Okay, let's get started.
+Olivia Okafor: I will run the load test on the checkout service.
+Lucas Silva: Did you update the onboarding checklist?
+Lucas Silva: I'm happy to email the signed contract to legal tomorrow.
+Olivia Okafor: Right, that makes sense.
+Lucas Silva: We need to arrange travel for the conference by Friday.
+Lucas Silva: We could probably clean up the support backlog if we have time.
+Olivia Okafor: I need to write the test plan for the new API by the end of the sprint.
+Isla Nguyen: We decided to go with the second option.
+Ravi Larsen: Good point.
+Ravi Larsen: I'm happy to audit the access permissions for the shared drive by next Wednesday.
+Lucas Silva: I'll summarise the feedback quickly.
+Ravi Larsen: Maybe we could collect feedback from the pilot users at some point.
+Olivia Okafor: Let me share my screen.
+Isla Nguyen: We decided to go with the second option.
+Ravi Larsen: Great.
+Isla Nguyen: Good point.
+Olivia Okafor: Let's move on to the next item.
+Olivia Okafor: Morning everyone.
+Ravi Larsen: Thanks everyone, that's it for today.

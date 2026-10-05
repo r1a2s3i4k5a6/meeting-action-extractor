@@ -1,0 +1,24 @@
+[00:00] Sofia: Okay, let's get started.
+[00:04] Amara: I can't arrange travel for the conference before Monday.
+[00:15] Ravi: Sofia, please renew the software licences by Wednesday.
+[00:28] Sofia: I'm going to draft the customer announcement.
+[00:41] Elena: Good point.
+[00:53] Amara: Can I get Elena to translate the help articles into Spanish by Tuesday?
+[00:57] Elena: On it.
+[01:01] Sofia: We could probably collect feedback from the pilot users if we have time.
+[01:16] Elena: Can you hear me okay?
+[01:29] Sofia: Maybe we could prepare the quarterly metrics deck at some point.
+[01:46] Sofia: Yeah, I saw that.
+[02:08] Amara: Thanks for joining.
+[02:17] Sofia: I updated the vendor comparison last week.
+[02:29] Sofia: Who is able to order the new laptops for the interns?
+[02:38] Amara: I'd like Sofia to create tickets for the remaining bugs by Thursday.
+[02:45] Sofia: Got it.
+[02:54] Sofia: Let's move on to the next item.
+[03:01] Sofia: Right, that makes sense.
+[03:20] Ravi: Who is able to draft the customer announcement?
+[03:45] Elena: I promise to book a room for the offsite.
+[04:05] Amara: I'll arrange travel for the conference by end of day.
+[04:15] Amara: To recap: Sofia will create tickets for the remaining bugs by Thursday.
+[04:28] Ravi: To recap: Sofia will renew the software licences by Wednesday.
+[04:49] Sofia: Thanks everyone, that's it for today.
