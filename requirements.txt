@@ -1,0 +1,4 @@
+# Core pipeline (rules backend, CLI, evaluation, tests) uses only the Python standard library.
+streamlit>=1.35        # web UI
+pandas>=2.0            # tables in the UI
+anthropic>=0.40        # optional: LLM backend (set ANTHROPIC_API_KEY)
