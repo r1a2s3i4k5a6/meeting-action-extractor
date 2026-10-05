@@ -112,15 +112,27 @@ def format_breakdown(b: Dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+class BackendFallbackError(RuntimeError):
+    """The requested backend could not run, so the pipeline silently used another one."""
+
+
 def evaluate_dataset(data_dir: Path = DATA_DIR, backend: str = "rules",
                      thresholds: Sequence[float] = (0.0, 0.3, 0.5, 0.7), limit: int = 0,
-                     **pipeline_kwargs) -> Dict[str, Any]:
+                     strict: bool = True, **pipeline_kwargs) -> Dict[str, Any]:
+    """Score `backend` on one annotated dataset.
+
+    strict=True (default): if the pipeline fell back to a different backend (e.g. the LLM call failed and the rules
+    ran instead) raise BackendFallbackError, so rules scores can never be reported under the label "llm"."""
     ann = json.loads((Path(data_dir) / "annotations.json").read_text(encoding="utf-8"))
     per_meeting, dis = [], []
     for m in (ann["meetings"][:limit] if limit else ann["meetings"]):
         text = (Path(data_dir) / "sample_transcripts" / m["file"]).read_text(encoding="utf-8")
         res = run_pipeline(text, date.fromisoformat(m["meeting_date"]), backend=backend,
                            min_confidence=0.0, **pipeline_kwargs)
+        if strict and backend in ("rules", "llm") and res.backend != backend:
+            raise BackendFallbackError(
+                f"{m['file']}: requested backend '{backend}' but '{res.backend}' was used. "
+                f"{' '.join(res.warnings) or 'No warning given.'}")
         per_meeting.append((res.items, m["action_items"]))
         dis.append(m.get("distractors", []))
     extra = {}
@@ -140,14 +152,51 @@ def format_report(rep: Dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+def compare_backends(data_dir: Path, backends: Sequence[str] = ("rules", "llm"), limit: int = 0,
+                     min_conf: float = 0.3, **pipeline_kwargs) -> Dict[str, Any]:
+    """Run several backends on the SAME meetings and return their scores at `min_conf` side by side."""
+    out: Dict[str, Any] = {"dataset": Path(data_dir).name, "min_confidence": min_conf, "backends": {}}
+    for b in backends:
+        rep = evaluate_dataset(Path(data_dir), b, thresholds=(min_conf,), limit=limit, **pipeline_kwargs)
+        out["backends"][b] = {"n_meetings": rep["n_meetings"], "n_gold_items": rep["n_gold_items"], **rep["by_threshold"][0]}
+    return out
+
+
+def format_comparison(cmp: Dict[str, Any]) -> str:
+    lines = [f"[{cmp['dataset']}] backends compared at confidence >= {cmp['min_confidence']}",
+             f"{'backend':<8} {'meetings':>8} {'gold':>5} {'P':>6} {'R':>6} {'F1':>6} {'owner':>6} {'date':>6} {'TP':>4} {'FP':>4} {'FN':>4}"]
+    for b, r in cmp["backends"].items():
+        lines.append(f"{b:<8} {r['n_meetings']:>8} {r['n_gold_items']:>5} {r['precision']:>6.2f} {r['recall']:>6.2f} {r['f1']:>6.2f} "
+                     f"{r['owner_accuracy']:>6.2f} {r['deadline_accuracy']:>6.2f} {r['tp']:>4} {r['fp']:>4} {r['fn']:>4}")
+    return "\n".join(lines)
+
+
 def main(argv: Optional[Sequence[str]] = None) -> None:
     ap = argparse.ArgumentParser(description="Evaluate extraction accuracy on annotated meetings.")
     ap.add_argument("--data-dir", default=str(DATA_DIR))
     ap.add_argument("--all", action="store_true", help="Evaluate every dataset under data/ (dev, heldout, blind)")
     ap.add_argument("--backend", default="rules", choices=["rules", "llm"])
     ap.add_argument("--limit", type=int, default=0, help="Only the first N meetings (saves LLM cost)")
-    ap.add_argument("--out", default=str(ROOT / "reports" / "evaluation.json"))
+    ap.add_argument("--compare", action="store_true",
+                    help="Run rules AND llm on the same meetings and print them side by side "
+                         "(needs ANTHROPIC_API_KEY; saved to reports/comparison.json)")
+    ap.add_argument("--out", default=None, help="Output JSON (default reports/evaluation.json, or reports/comparison.json with --compare)")
     a = ap.parse_args(argv)
+    if a.compare:
+        out = Path(a.out or ROOT / "reports" / "comparison.json")
+        dirs = ([DATA_DIR] + sorted(p.parent for p in DATA_DIR.glob("*/annotations.json"))) if a.all else [Path(a.data_dir)]
+        results = {}
+        for d in dirs:
+            try:
+                results[d.name] = compare_backends(d, limit=a.limit)
+            except BackendFallbackError as e:
+                raise SystemExit(f"LLM backend did not run, so there is nothing to compare:\n  {e}")
+            print(format_comparison(results[d.name]) + "\n")
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps(results, indent=2), encoding="utf-8")
+        print(f"Saved {out}")
+        return
+    a.out = a.out or str(ROOT / "reports" / "evaluation.json")
     if a.all:
         reports = {}
         for d in [DATA_DIR] + sorted(p.parent for p in DATA_DIR.glob("*/annotations.json")):
@@ -167,4 +216,7 @@ def main(argv: Optional[Sequence[str]] = None) -> None:
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except BackendFallbackError as e:
+        raise SystemExit(f"Evaluation stopped: the requested backend did not run.\n  {e}")

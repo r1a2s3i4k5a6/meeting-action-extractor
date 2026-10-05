@@ -72,14 +72,25 @@ def extract_llm(transcript: str, participants: Sequence[str], ref_date: date,
     if not key:
         raise LLMExtractionError("ANTHROPIC_API_KEY is not set")
     client = anthropic.Anthropic(api_key=key)
-    try:
-        resp = client.messages.create(
-            model=model or os.getenv("ANTHROPIC_MODEL", DEFAULT_MODEL),
-            max_tokens=4000,
-            system=SYSTEM_PROMPT,
-            messages=[{"role": "user", "content": build_user_prompt(transcript, participants, ref_date)}],
-        )
-    except Exception as e:  # network/auth/model errors
-        raise LLMExtractionError(f"LLM request failed: {e}") from e
-    raw = "".join(getattr(b, "text", "") for b in resp.content if getattr(b, "type", "") == "text")
-    return parse_llm_json(raw)
+    messages = [{"role": "user", "content": build_user_prompt(transcript, participants, ref_date)}]
+    last_err: Optional[LLMExtractionError] = None
+    for attempt in range(2):  # one retry if the model replies with something that is not a JSON array
+        try:
+            resp = client.messages.create(
+                model=model or os.getenv("ANTHROPIC_MODEL", DEFAULT_MODEL),
+                max_tokens=4000,
+                system=SYSTEM_PROMPT,
+                messages=messages,
+            )
+        except Exception as e:  # network/auth/model errors: retrying will not help
+            raise LLMExtractionError(f"LLM request failed: {e}") from e
+        raw = "".join(getattr(b, "text", "") for b in resp.content if getattr(b, "type", "") == "text")
+        try:
+            return parse_llm_json(raw)
+        except LLMExtractionError as e:
+            last_err = e
+            messages = messages + [
+                {"role": "assistant", "content": raw or "(empty)"},
+                {"role": "user", "content": "That was not a valid JSON array. Reply again with ONLY the JSON array."},
+            ]
+    raise last_err  # type: ignore[misc]
