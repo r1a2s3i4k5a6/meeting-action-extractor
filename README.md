@@ -12,7 +12,8 @@ pip install -r requirements.txt
 streamlit run app.py                                   # web UI (upload -> results)
 python -m meeting_actions.cli data/sample_transcripts/01_launch_readiness.txt --date 2026-09-14
 python -m meeting_actions.evaluate --all               # precision / recall / F1 on every dataset
-python -m unittest discover -s tests -t .              # 48 tests (stdlib only, no installs needed)
+python -m meeting_actions.evaluate --compare --data-dir data/synthetic --limit 10   # rules vs LLM, same meetings (needs API key)
+python -m unittest discover -s tests -t .              # 57 tests (stdlib only, no installs needed)
 ```
 
 The core pipeline, CLI, evaluation and tests use **only the Python standard library**. `streamlit`/`pandas`
@@ -34,7 +35,7 @@ are needed only for the UI, and `anthropic` only for the optional LLM backend.
 - **Missing owners:** `missing_owner` flag, confidence −0.15; placeholder owners ("team", "TBD", "everyone") are treated as missing; names are mapped to the participant roster ("sarah" → "Sarah Lee"); names not in the roster → `unknown_owner`.
 - **Duplicates:** items with similar text (≥ 0.8), compatible owner and compatible deadline are merged (gaps filled from the duplicate, confidence +0.05, `merged_duplicate`).
 - **Too-short tasks** (< 2 words) are dropped.
-- **Status:** `needs_review` if confidence < 0.6 or any blocking flag (missing/unknown owner, invalid/past deadline); otherwise `open`.
+- **Status:** the extractor sets `needs_review` if confidence < 0.6 or any blocking flag (missing/unknown owner, invalid/past deadline), otherwise `open`. `done` is never set automatically: a person picks it in the UI table when the task is finished.
 
 ### Confidence
 Rules backend: pattern strength (explicit "action item" 0.95 > direct assignment 0.85 > self-commitment 0.85/0.75 > "can you…" without a name 0.60 > group "we should…" 0.50), +0.05 for a deadline, +0.08 if the owner acknowledges ("sure", "will do"), −0.25 for hedging ("maybe", "at some point"), then validation penalties. LLM backend: the model's own estimate, then validation penalties.
@@ -49,75 +50,83 @@ Rules backend: pattern strength (explicit "action item" 0.95 > direct assignment
 |---|---|
 | 1. Gather or generate annotated transcripts | Done: hand-written sets + a reproducible synthetic generator (all data is generated) |
 | 2. Clean and segment by speaker and sentence | Done (`preprocess.py`) |
-| 3. LLM or transformer extraction | Implemented (Anthropic LLM backend + offline rules). **LLM path is tested only with a mocked client; live accuracy has not been measured** |
-| 4. Output schema (task, person, date, status) | Done (+ confidence, source, flags) |
+| 3. LLM or transformer extraction | Implemented: Anthropic LLM backend (JSON output, one retry on malformed JSON, fallback to rules) plus an offline rules backend. **Live LLM accuracy has not been measured yet** (the LLM path is tested with a fake client). Run `python -m meeting_actions.evaluate --compare --data-dir data/synthetic --limit 10` with your `ANTHROPIC_API_KEY` to produce the rules-vs-LLM table (`reports/comparison.json`) |
+| 4. Output schema (task, person, date, status) | Done (+ confidence, source, flags). `owner` = person, `deadline` = date |
 | 5. Validation (dates, missing owners, duplicates) | Done (`validation.py`, 7 tests) |
-| 6. Evaluation + upload-to-results UI | Evaluation done on 5 datasets. Streamlit UI written and compile-checked; run `streamlit run app.py` to confirm in your environment |
+| 6. Evaluation + upload-to-results UI | Evaluation done (5 datasets, rules or LLM, side-by-side `--compare`). Streamlit UI (upload / sample, filter, edit, CSV + JSON download, Evaluate tab) is exercised end to end by `tests/test_app_smoke.py` against a fake Streamlit; **it has not been opened in a real browser by the author** - run `streamlit run app.py` once to confirm |
 
 ## Input format
 `Speaker: text` per line, optional timestamps (`[00:01:02] Ann: …`), continuation lines, or WebVTT/SRT (`<v Ann>…`).
 Owner detection needs speaker labels (participants are taken from them).
 
 ## Evaluation
-`python -m meeting_actions.evaluate --all` matches predicted to gold tasks (text similarity ≥ 0.5, one-to-one) and reports
+`python -m meeting_actions.evaluate --all` matches predicted to gold tasks (text similarity >= 0.5, one-to-one) and reports
 precision, recall, F1, owner accuracy, deadline accuracy, and a confidence-threshold sweep (saved to `reports/evaluation.json`).
+A run with `--backend llm` **stops with an error** if the LLM could not be called, instead of silently scoring the rules backend
+under the "llm" label.
 
-**What the numbers mean (rules backend, confidence ≥ 0.3):**
+### The number to quote: synthetic benchmark
+`data/synthetic/` (40 meetings, 220 gold items), rules backend, scored once with no tuning:
+**precision 0.92, recall 0.77, F1 0.84** (owner accuracy 1.00, deadline accuracy 0.98 on matched items).
+Generate it yourself (or a fresh one with another seed): `python scripts/generate_synthetic.py --n 40 --seed 11 --out data/synthetic`.
+The generator deliberately includes phrasings the rules do not cover (about 1/3 of templates, e.g. "Over to you, Sam. ...",
+"Sam agreed to ...", "I promise to ..."), deadlines the rules cannot resolve ("within two weeks"), and hard negatives (hedges,
+questions, status updates, in-meeting activity like "let me explain how it works"). `python -m meeting_actions.evaluate --data-dir data/synthetic`
+prints a **breakdown**: rules find 100% of items in the templates they cover and <= 45% in the uncovered ones; all 14 false positives
+were in-meeting activity. Because the template mix was chosen by the author, this is a diagnostic of *which* phrasings work,
+not a real-world estimate.
 
+### Curated sets (not a generalisation estimate)
 | Dataset | Gold items | F1 when first scored | F1 now |
 |---|---|---|---|
 | `data/` (dev) | 27 | 1.00 (rules were written against it) | 1.00 |
-| `data/heldout/` | 19 | **0.71** (new phrasing, before any changes) | 1.00 |
-| `data/blind/` | 13 | **0.67** (written after the rules were frozen) | 1.00 |
+| `data/heldout/` | 19 | 0.71 (new phrasing, before any changes) | 1.00 |
+| `data/blind/` | 13 | 0.67 (written after the rules were frozen) | 1.00 |
 
-The "now" column is **not** a generalisation estimate: after the first scoring I extended the rules to fix the failures
-on `heldout` and `blind`, so those three sets are now effectively training data.
+After the first scoring the rules were extended to fix the failures on `heldout` and `blind`, so these three sets are now
+effectively training data. The honest takeaway is the first-scored column: unseen phrasing dropped F1 to about 0.7.
 
-**Synthetic benchmark** (`data/synthetic/`, 40 meetings, 220 gold items, rules backend, scored once with no tuning):
-precision 0.92, recall 0.77, **F1 0.84** (owner accuracy 1.00, deadline accuracy 0.98 on matched items).
-Generate it yourself (or a fresh one with another seed): `python scripts/generate_synthetic.py --n 40 --seed 11 --out data/synthetic`.
-The generator deliberately includes phrasings the rules do not cover (≈1/3 of templates, e.g. "Over to you, Sam. …", "Sam agreed to …",
-"I promise to …"), deadlines the rules cannot resolve ("within two weeks"), and hard negatives (hedges, questions, status updates,
-in-meeting activity like "let me explain how it works"). `python -m meeting_actions.evaluate --data-dir data/synthetic` prints a
-**breakdown**: rules find 100% of items in the templates they cover and ≤ 45% in the uncovered ones; all 14 false positives were
-in-meeting activity. Because I chose the template mix, this is a diagnostic of *which* phrasings work, not a real-world estimate.
+### Rules vs LLM (to be filled in by you)
+No live LLM run is included in this repository (it needs an API key and network access). To produce it:
+```bash
+export ANTHROPIC_API_KEY=sk-ant-...
+python -m meeting_actions.evaluate --compare --data-dir data/synthetic --limit 10   # cheap first look
+python -m meeting_actions.evaluate --compare --all                                   # every dataset
+```
+Output: a side-by-side table (P / R / F1 / owner / date) per dataset, saved to `reports/comparison.json`. Paste the table here.
 
-**What these numbers do and don't show.** All data in this project is generated, so none of it is a real-world estimate: the curated
-sets were fixed against the rules, and the synthetic set measures how well the rules cover the phrasings *I* chose. The rules have not been
-evaluated on real recorded meetings, and spontaneous multi-party speech is where they are most likely to struggle: every false positive on
-the synthetic set was in-meeting activity ("let me explain how it works") that looks like a commitment. The LLM backend is the intended
-answer for messy phrasing; measure it with `python -m meeting_actions.evaluate --data-dir data/synthetic --backend llm --limit 10`
-(needs `ANTHROPIC_API_KEY`; `--limit` caps cost) and compare it with the rules on the same data.
+**What these numbers do and don't show.** All data in this project is generated, so none of it is a real-world estimate.
+The rules have not been evaluated on real recorded meetings, and spontaneous multi-party speech is where they are most likely
+to struggle. The LLM backend is the intended answer for messy phrasing, which is why the comparison above matters.
 
-Items below confidence 0.5 are mostly unassigned group tasks ("someone should…"); they are kept but marked `needs_review`.
+Items below confidence 0.5 are mostly unassigned group tasks ("someone should..."); they are kept but marked `needs_review`.
 
 Known limitations: pronoun resolution is a simple heuristic (subject of a recent sentence); soft or implicit
-commitments ("I should have a fix by Friday" is covered, but "that'd be me") are not; a sentence containing a negation
-("I can't…") is skipped entirely; dates like "the week of Nov 2" are deliberately not treated as deadlines.
+commitments ("I should have a fix by Friday" is covered, but "that'd be me" is not); a sentence containing a negation
+("I can't...") is skipped entirely; dates like "the week of Nov 2" are deliberately not treated as deadlines.
 
 ## LLM backend
 ```bash
 export ANTHROPIC_API_KEY=sk-ant-...     # optional: ANTHROPIC_MODEL=<model id>
 python -m meeting_actions.cli my_meeting.txt --date 2026-10-05 --backend llm --format json
 ```
+The model's JSON reply is parsed (one retry if it is malformed), then passes through the same validation rules as the rules backend. If the API fails the CLI/UI fall back to rules and show a warning.
 
 ## Project layout
 ```
 app.py                    Streamlit UI
-meeting_actions/          preprocess, dates, rules_extractor, llm_extractor, validation, pipeline, evaluate, cli
+meeting_actions/          preprocess, dates, rules_extractor, llm_extractor, validation, pipeline, evaluate, cli, ui_helpers
 data/                     dev set; data/heldout and data/blind = extra annotated sets
 scripts/generate_synthetic.py  reproducible synthetic meetings + gold labels
 tests/                    unit + regression tests
 reports/evaluation.json   latest evaluation output
 ```
 
-## Submitting (git history is already created, one commit per project step)
+## Submitting
+The git history has one commit per project step plus follow-up fix commits (`git log --oneline`). The commits carry a
+**placeholder author** (`Your Name <you@example.com>`); put your own name on them before pushing:
 ```bash
-git log --oneline                                   # 12 commits: scaffold, steps 1-6, docs
-# 1) put your own name/email on every commit (they were created with a placeholder author):
-git config user.name "Your Name" && git config user.email "you@example.com"
-git rebase -r --root --exec 'git commit --amend --reset-author --no-edit'
-# 2) create an EMPTY repo on GitHub, then:
-git remote add origin https://github.com/<you>/<repo>.git
+./scripts/set_git_author.sh "Your Name" "you@example.com"     # rewrites every commit's author
+git remote add origin https://github.com/<you>/<repo>.git     # create an EMPTY repo on GitHub first
 git push -u origin main
 ```
