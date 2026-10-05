@@ -50,10 +50,10 @@ Rules backend: pattern strength (explicit "action item" 0.95 > direct assignment
 |---|---|
 | 1. Gather or generate annotated transcripts | Done: hand-written sets + a reproducible synthetic generator (all data is generated) |
 | 2. Clean and segment by speaker and sentence | Done (`preprocess.py`) |
-| 3. LLM or transformer extraction | Implemented: Anthropic LLM backend (JSON output, one retry on malformed JSON, fallback to rules) plus an offline rules backend. **Live LLM accuracy has not been measured yet** (the LLM path is tested with a fake client). Run `python -m meeting_actions.evaluate --compare --data-dir data/synthetic --limit 10` with your `ANTHROPIC_API_KEY` to produce the rules-vs-LLM table (`reports/comparison.json`) |
+| 3. LLM or transformer extraction | Implemented: Anthropic LLM backend (JSON output, one retry on malformed JSON, fallback to rules) plus an offline rules backend. **Live LLM accuracy was not measured** (no API key was available; the LLM path is tested with a fake client). To measure it, run `python -m meeting_actions.evaluate --compare --data-dir data/synthetic --limit 10` with an `ANTHROPIC_API_KEY` |
 | 4. Output schema (task, person, date, status) | Done (+ confidence, source, flags). `owner` = person, `deadline` = date |
 | 5. Validation (dates, missing owners, duplicates) | Done (`validation.py`, 7 tests) |
-| 6. Evaluation + upload-to-results UI | Evaluation done (5 datasets, rules or LLM, side-by-side `--compare`). Streamlit UI (upload / sample, filter, edit, CSV + JSON download, Evaluate tab) is exercised end to end by `tests/test_app_smoke.py` against a fake Streamlit; **it has not been opened in a real browser by the author** - run `streamlit run app.py` once to confirm |
+| 6. Evaluation + upload-to-results UI | Evaluation done (5 datasets, rules or LLM, side-by-side `--compare`). Streamlit UI (upload / sample, filter, edit, CSV + JSON download, Evaluate tab) is exercised by `tests/test_app_smoke.py` against a fake Streamlit and was run in a real browser with `streamlit run app.py` (upload and results table confirmed) |
 
 ## Input format
 `Speaker: text` per line, optional timestamps (`[00:01:02] Ann: …`), continuation lines, or WebVTT/SRT (`<v Ann>…`).
@@ -86,14 +86,14 @@ not a real-world estimate.
 After the first scoring the rules were extended to fix the failures on `heldout` and `blind`, so these three sets are now
 effectively training data. The honest takeaway is the first-scored column: unseen phrasing dropped F1 to about 0.7.
 
-### Rules vs LLM (to be filled in by you)
-No live LLM run is included in this repository (it needs an API key and network access). To produce it:
-```bash
-export ANTHROPIC_API_KEY=sk-ant-...
-python -m meeting_actions.evaluate --compare --data-dir data/synthetic --limit 10   # cheap first look
-python -m meeting_actions.evaluate --compare --all                                   # every dataset
-```
-Output: a side-by-side table (P / R / F1 / owner / date) per dataset, saved to `reports/comparison.json`. Paste the table here.
+### Rules vs LLM
+The LLM backend (`llm_extractor.py`) is implemented and covered by unit tests with a mocked client. A live accuracy
+comparison was **not run** because no API key was available, so every score reported in this README comes from the
+rule-based backend. To reproduce the comparison, set `ANTHROPIC_API_KEY` and run:
+
+    python -m meeting_actions.evaluate --compare --data-dir data/synthetic --limit 10
+
+This prints a side-by-side table (P / R / F1 / owner / date) and saves it to `reports/comparison.json`.
 
 **What these numbers do and don't show.** All data in this project is generated, so none of it is a real-world estimate.
 The rules have not been evaluated on real recorded meetings, and spontaneous multi-party speech is where they are most likely
